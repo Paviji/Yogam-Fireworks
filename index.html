@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yogam Fireworks - Billing System</title>
   <!-- Tailwind CSS & Icons -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_rtKquRY9mKMB7eDWlToE-RidKzxoVtx6p71DT4cIFqVMkhRzuu_wXtu_FbU8dIL0rJaIg--N7dsuQFbREbyi17bC979VNX3Ia1yGNXvJJd-Cj8A_BiAejakKPoOKfHRrtY1Xb_0kvA2uZ2qJFTSwJFIVE5o3OGegOvTvu8VszwEUiuJKXDZkAk70vNiwy2BptUYKEPwK9PYenl1Fi9m9_wLFRbsuOAbewgx2f8wt_WgIzNORUgB4w9tUVZE3VLsTL5cfIVYKzwlCRhJUwt5iBqeoWlL3aDCz2NQdO7H6TiegajHL9qGjVkYHqj7ZF1JE6lN9DUU6gO12k5OPb8W3NDC2W0ej2EjBPG2bnzR2jo" charset="UTF-8"></script><script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Offline Excel Engine & OCR Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -202,18 +202,7 @@
                   <th class="p-2.5 text-center">Action</th>
                 </tr>
               </thead>
-              <tbody id="billItemsBody" class="divide-y divide-slate-100"><tr>
-            <td class="p-2.5 font-bold text-slate-700">0133</td>
-            <td class="p-2.5 font-semibold text-slate-800">Ground Chakkar Big (25 Pcs) (தரை சக்கரம் பெரியது)</td>
-            <td class="p-2.5 text-right font-medium">₹285.00</td>
-            <td class="p-2.5 text-center font-bold">
-              <input type="number" min="1" value="2" oninput="updateItemQty(0, this.value)" onblur="validateItemQtyOnBlur(0, this)" class="w-16 border border-slate-300 rounded px-1.5 py-1 text-center font-bold text-slate-800 outline-none focus:ring-1 focus:ring-red-500">
-            </td>
-            <td class="p-2.5 text-right font-bold text-slate-900" id="itemRowTotal_0">₹570.00</td>
-            <td class="p-2.5 text-center">
-              <button onclick="removeItem(0)" class="text-red-500 hover:text-red-700"><i class="fa-solid fa-trash"></i></button>
-            </td>
-          </tr></tbody>
+              <tbody id="billItemsBody" class="divide-y divide-slate-100"><tr><td colspan="6" class="p-4 text-center text-slate-400">பொருட்கள் சேர்க்கப்படவில்லை</td></tr></tbody>
             </table>
           </div>
 
@@ -227,12 +216,12 @@
               </div>
             </div>
             <div class="space-y-1 text-right text-xs">
-              <div class="text-slate-500 font-medium">Gross Total: <span class="font-bold text-slate-800">₹<span id="grossTotalText">570.00</span></span></div>
+              <div class="text-slate-500 font-medium">Gross Total: <span class="font-bold text-slate-800">₹<span id="grossTotalText">0.00</span></span></div>
               <div class="text-emerald-600 font-semibold">Discount: -₹<span id="discountAmountText">0.00</span></div>
             </div>
             <div class="text-right border-l md:pl-4">
               <p class="text-xs text-slate-500 uppercase font-black">Net Total</p>
-              <h2 class="text-2xl font-black text-red-600">₹<span id="summaryGrandTotal">570.00</span></h2>
+              <h2 class="text-2xl font-black text-red-600">₹<span id="summaryGrandTotal">0.00</span></h2>
             </div>
           </div>
 
@@ -268,7 +257,7 @@
             </div>
             <div class="text-right">
               <span class="inline-block bg-red-100 text-red-700 font-extrabold text-[10px] px-2 py-0.5 rounded">ESTIMATE / BILL</span>
-              <p class="text-[10px] text-slate-400 mt-1">Bill No: <span id="billPreviewNo" class="font-bold text-slate-800">#YF-2</span></p>
+              <p class="text-[10px] text-slate-400 mt-1">Bill No: <span id="billPreviewNo" class="font-bold text-slate-800">#YF-1001</span></p>
               <p class="text-[10px] text-slate-400">Date: <span id="billPreviewDate" class="font-semibold text-slate-700">16/11/2026</span></p>
             </div>
           </div>
@@ -298,21 +287,15 @@
                   <th class="py-1 text-right">Amount</th>
                 </tr>
               </thead>
-              <tbody id="billPreviewTableBody" class="divide-y divide-slate-100 text-slate-700 font-medium"><tr>
-            <td class="py-1 font-bold text-slate-800">0133</td>
-            <td class="py-1 font-medium">Ground Chakkar Big (25 Pcs) (தரை சக்கரம் பெரியது)</td>
-            <td class="py-1 text-center font-semibold" id="previewRowQty_0">2</td>
-            <td class="py-1 text-right">₹285.00</td>
-            <td class="py-1 text-right font-bold" id="previewRowTotal_0">₹570.00</td>
-          </tr></tbody>
+              <tbody id="billPreviewTableBody" class="divide-y divide-slate-100 text-slate-700 font-medium"><tr><td colspan="5" class="py-4 text-center text-slate-400">No items added yet</td></tr></tbody>
             </table>
           </div>
 
           <!-- Totals and Discount Breakdown -->
           <div class="border-t-2 border-slate-200 pt-1.5 mt-1 space-y-0.5 text-xs">
             <div class="flex justify-between text-slate-600">
-              <span>Total Quantity: <b id="billPreviewTotalQty" class="text-slate-800">2</b></span>
-              <span>Gross Total: <b>₹<span id="billPreviewGross">570.00</span></b></span>
+              <span>Total Quantity: <b id="billPreviewTotalQty" class="text-slate-800">0</b></span>
+              <span>Gross Total: <b>₹<span id="billPreviewGross">0.00</span></b></span>
             </div>
             <div class="flex justify-between text-emerald-600 font-semibold" id="billPreviewDiscountRow">
               <span>Discount (<span id="billPreviewDiscRate">0</span>%):</span>
@@ -332,7 +315,7 @@
             </div>
             <div class="text-right">
               <p class="text-[9px] text-slate-500 uppercase font-black">Net Payable</p>
-              <h3 class="text-xl font-black text-red-600 leading-tight">₹<span id="billPreviewGrandTotal">570.00</span></h3>
+              <h3 class="text-xl font-black text-red-600 leading-tight">₹<span id="billPreviewGrandTotal">0.00</span></h3>
             </div>
           </div>
 
@@ -656,7 +639,7 @@ window.PRESET_SETTINGS = {
   "upi": "senthil.senthil03@ybl",
   "map": "https://maps.app.goo.gl/e9YEGpofVxHRCRgh8",
   "bank": "A/C: 008501000059404 | IFSC: IOBA0000085 | Bank: Indian Overseas Bank | Sivakasi",
-  "aiApiKey": "AQ.Ab8RN6JukYfvI63DwrV69vJgWCTCQaDNGI4h2w2NiOPElDR2dQ"
+  "aiApiKey": ""
 };
 window.PRESET_PRODUCTS = [
   {
@@ -1470,1020 +1453,7 @@ window.PRESET_PRODUCTS = [
     "rate": 11300
   }
 ];
-window.PRESET_BILLS = [
-  {
-    "billNo": "YF-1",
-    "custName": "Ramakrishnan",
-    "custPlace": "Sivakasi",
-    "custPhone": "-",
-    "items": [
-      {
-        "code": "0103",
-        "name": "3 1/2\" Lakshmi (3 1/2\" லட்சுமி)",
-        "rate": 50,
-        "qty": 1,
-        "total": 50
-      },
-      {
-        "code": "0110",
-        "name": "2 3/4\" Kuruvi (2 3/4\" குருவி)",
-        "rate": 28,
-        "qty": 1,
-        "total": 28
-      },
-      {
-        "code": "0120",
-        "name": "15 cm Colour (15 cm கலர்)",
-        "rate": 140,
-        "qty": 1,
-        "total": 140
-      },
-      {
-        "code": "0122",
-        "name": "15 cm Red (15 cm சிவப்பு)",
-        "rate": 160,
-        "qty": 1,
-        "total": 160
-      },
-      {
-        "code": "0133",
-        "name": "Ground Chakkar Big (25 Pcs) (தரை சக்கரம் பெரியது)",
-        "rate": 285,
-        "qty": 1,
-        "total": 285
-      },
-      {
-        "code": "0142",
-        "name": "Flower Pots Super Deluxe (2 Pcs)",
-        "rate": 385,
-        "qty": 1,
-        "total": 385
-      },
-      {
-        "code": "0148",
-        "name": "Golden Globe (5 Pcs) (கோல்டன் குளோப்)",
-        "rate": 290,
-        "qty": 1,
-        "total": 290
-      },
-      {
-        "code": "0151",
-        "name": "Popcorn (2 Pcs) (பாப்கார்ன்)",
-        "rate": 500,
-        "qty": 1,
-        "total": 500
-      },
-      {
-        "code": "0162",
-        "name": "Spider Man (ஸ்பைடர் மேன்)",
-        "rate": 340,
-        "qty": 1,
-        "total": 340
-      },
-      {
-        "code": "0163",
-        "name": "Rock Star Fountain (ராக் ஸ்டார் பவுண்டைன்)",
-        "rate": 265,
-        "qty": 1,
-        "total": 265
-      },
-      {
-        "code": "0170",
-        "name": "Big Bang / Jazz Music (பிக் பேங்க் / ஜாஷ் மியூசிக்)",
-        "rate": 400,
-        "qty": 1,
-        "total": 400
-      },
-      {
-        "code": "0176",
-        "name": "Tin Beer (1 Pce) (டின் பீர்)",
-        "rate": 270,
-        "qty": 1,
-        "total": 270
-      },
-      {
-        "code": "0178",
-        "name": "Twinkling Star 120 cm (சாட்டை 120 cm)",
-        "rate": 245,
-        "qty": 1,
-        "total": 245
-      },
-      {
-        "code": "0180",
-        "name": "Roman Candle (Red & Green) (ரோமன் கேண்டில்)",
-        "rate": 290,
-        "qty": 1,
-        "total": 290
-      },
-      {
-        "code": "0183",
-        "name": "Rocket Bomb (5 Pcs) (ராக்கெட் பாம்)",
-        "rate": 110,
-        "qty": 1,
-        "total": 110
-      },
-      {
-        "code": "0189",
-        "name": "Stripped Bijili (ஸ்டிரிப்டு பிஜிலி)",
-        "rate": 120,
-        "qty": 1,
-        "total": 120
-      },
-      {
-        "code": "0190",
-        "name": "Mini Bullet (மினி புல்லட்)",
-        "rate": 70,
-        "qty": 1,
-        "total": 70
-      },
-      {
-        "code": "0200",
-        "name": "AK-47 (ஏகே 47)",
-        "rate": 595,
-        "qty": 1,
-        "total": 595
-      },
-      {
-        "code": "0213",
-        "name": "Lotus (6 pcs) (தாமரை)",
-        "rate": 450,
-        "qty": 1,
-        "total": 450
-      },
-      {
-        "code": "0218",
-        "name": "Ganga Jamuna (5 pcs) (கங்கா ஜமுனா)",
-        "rate": 275,
-        "qty": 1,
-        "total": 275
-      },
-      {
-        "code": "0227",
-        "name": "Serpant Big (செர்பன்ட் பிக்)",
-        "rate": 100,
-        "qty": 1,
-        "total": 100
-      },
-      {
-        "code": "0231",
-        "name": "1 1/2\" Fancy (1 1/2\" பேன்சி)",
-        "rate": 160,
-        "qty": 1,
-        "total": 160
-      },
-      {
-        "code": "0249",
-        "name": "30 Shot (30 சாட்)",
-        "rate": 1350,
-        "qty": 1,
-        "total": 1350
-      }
-    ],
-    "discount": 65,
-    "netTotal": 2407.3,
-    "date": "16/11/2026"
-  },
-  {
-    "billNo": "YF-1047",
-    "custName": "Hospital ",
-    "custPlace": "Dindigul ",
-    "custPhone": "-",
-    "items": [
-      {
-        "code": "0127",
-        "name": "50 cm Electric (50 cm எலக்ட்ரிக்)",
-        "rate": 400,
-        "qty": 3,
-        "total": 1200
-      },
-      {
-        "code": "0128",
-        "name": "50 cm Colour (50 cm கலர்)",
-        "rate": 420,
-        "qty": 3,
-        "total": 1260
-      },
-      {
-        "code": "0126",
-        "name": "30 cm Red (30 cm சிவப்பு)",
-        "rate": 160,
-        "qty": 6,
-        "total": 960
-      },
-      {
-        "code": "0130",
-        "name": "Ground Chakkar Big (10 pcs) (தரை சக்கரம் பெரியது)",
-        "rate": 108,
-        "qty": 2,
-        "total": 216
-      },
-      {
-        "code": "0131",
-        "name": "Ground Chakkar Special (தரை சக்கரம் ஸ்பெசல்)",
-        "rate": 215,
-        "qty": 2,
-        "total": 430
-      },
-      {
-        "code": "0136",
-        "name": "Whistling Wheel (விசிலிங் வில்)",
-        "rate": 600,
-        "qty": 2,
-        "total": 1200
-      },
-      {
-        "code": "0142",
-        "name": "Flower Pots Super Deluxe (2 Pcs)",
-        "rate": 385,
-        "qty": 3,
-        "total": 1155
-      },
-      {
-        "code": "0173",
-        "name": "Violet Empire (வைலட் எம்பயர்)",
-        "rate": 390,
-        "qty": 2,
-        "total": 780
-      },
-      {
-        "code": "0148",
-        "name": "Golden Globe (5 Pcs) (கோல்டன் குளோப்)",
-        "rate": 290,
-        "qty": 1,
-        "total": 290
-      },
-      {
-        "code": "0208",
-        "name": "Cylindar Smoke Paper Bomb (சிலிண்டர் சுமோக் பேப்பர் பாம்)",
-        "rate": 735,
-        "qty": 1,
-        "total": 735
-      },
-      {
-        "code": "0207",
-        "name": "Guitar (கிட்டார்)",
-        "rate": 580,
-        "qty": 1,
-        "total": 580
-      },
-      {
-        "code": "0200",
-        "name": "AK-47 (ஏகே 47)",
-        "rate": 595,
-        "qty": 1,
-        "total": 595
-      },
-      {
-        "code": "0157",
-        "name": "H 20 Red Falls (H 20 சிவப்பு பால்ஸ்)",
-        "rate": 420,
-        "qty": 1,
-        "total": 420
-      },
-      {
-        "code": "0182",
-        "name": "Tri Colour Candle (3 In One) (டிரை கலர் கேண்டில்)",
-        "rate": 380,
-        "qty": 3,
-        "total": 1140
-      },
-      {
-        "code": "0180",
-        "name": "Roman Candle (Red & Green) (ரோமன் கேண்டில்)",
-        "rate": 290,
-        "qty": 3,
-        "total": 870
-      },
-      {
-        "code": "0221",
-        "name": "Helicopter (ஹெலிகாப்டர்)",
-        "rate": 250,
-        "qty": 1,
-        "total": 250
-      },
-      {
-        "code": "0226",
-        "name": "Drone (டிரோன்)",
-        "rate": 525,
-        "qty": 1,
-        "total": 525
-      },
-      {
-        "code": "0213",
-        "name": "Lotus (6 pcs) (தாமரை)",
-        "rate": 450,
-        "qty": 1,
-        "total": 450
-      },
-      {
-        "code": "0224",
-        "name": "Siren Mega (சைரன் மெகா)",
-        "rate": 500,
-        "qty": 1,
-        "total": 500
-      },
-      {
-        "code": "0249",
-        "name": "30 Shot (30 சாட்)",
-        "rate": 1350,
-        "qty": 1,
-        "total": 1350
-      },
-      {
-        "code": "0188",
-        "name": "Red Bijili (100 pcs) (சிவப்பு பிஜிலி (100 pcs))",
-        "rate": 110,
-        "qty": 2,
-        "total": 220
-      },
-      {
-        "code": "0209",
-        "name": "Dancing Umberla (குடை டான்ஸ்)",
-        "rate": 525,
-        "qty": 2,
-        "total": 1050
-      }
-    ],
-    "discount": 60,
-    "netTotal": 6470.4,
-    "date": "02/11/2026"
-  },
-  {
-    "billNo": "YF-1034",
-    "custName": "Aravind",
-    "custPlace": "Sivakasi",
-    "custPhone": "-",
-    "items": [
-      {
-        "code": "0107",
-        "name": "Jallikattu (ஜல்லிக்கட்டு)",
-        "rate": 170,
-        "qty": 5,
-        "total": 850
-      },
-      {
-        "code": "0106",
-        "name": "2 Sound (2 சவுண்ட்)",
-        "rate": 110,
-        "qty": 10,
-        "total": 1100
-      },
-      {
-        "code": "0104",
-        "name": "Mega Gold Lakshmi (மெகா கோல்டு லட்சுமி)",
-        "rate": 150,
-        "qty": 10,
-        "total": 1500
-      },
-      {
-        "code": "0103",
-        "name": "3 1/2\" Lakshmi (3 1/2\" லட்சுமி)",
-        "rate": 50,
-        "qty": 10,
-        "total": 500
-      },
-      {
-        "code": "0192",
-        "name": "Hydro Bomb (ஹைட்ரோ பாம்)",
-        "rate": 195,
-        "qty": 5,
-        "total": 975
-      },
-      {
-        "code": "0258",
-        "name": "100 wala",
-        "rate": 145,
-        "qty": 3,
-        "total": 435
-      },
-      {
-        "code": "0125",
-        "name": "30 cm Green (30 cm பச்சை)",
-        "rate": 150,
-        "qty": 2,
-        "total": 300
-      },
-      {
-        "code": "0143",
-        "name": "Colour Koti (10 Pcs) (கலர் கோட்டி)",
-        "rate": 670,
-        "qty": 1,
-        "total": 670
-      },
-      {
-        "code": "0257",
-        "name": "56 Giant",
-        "rate": 140,
-        "qty": 10,
-        "total": 1400
-      }
-    ],
-    "discount": 0,
-    "netTotal": 7730,
-    "date": "16/11/2026"
-  },
-  {
-    "billNo": "YF-1005",
-    "custName": "Siva",
-    "custPlace": "Srivi ",
-    "custPhone": "-",
-    "items": [
-      {
-        "code": "0101",
-        "name": "Ganesh / Lion (கணேஷ் / சிங்கம்)",
-        "rate": 140,
-        "qty": 1,
-        "total": 140
-      },
-      {
-        "code": "0101",
-        "name": "Ganesh / Lion (கணேஷ் / சிங்கம்)",
-        "rate": 140,
-        "qty": 1,
-        "total": 140
-      }
-    ],
-    "discount": 60,
-    "netTotal": 112,
-    "date": "27/10/2026"
-  },
-  {
-    "billNo": "YF-1033",
-    "custName": "Sudhan",
-    "custPlace": "Madurai ",
-    "custPhone": "-",
-    "items": [
-      {
-        "code": "0146",
-        "name": "Shower (5 Pcs) (சவர்)",
-        "rate": 275,
-        "qty": 1,
-        "total": 275
-      },
-      {
-        "code": "0249",
-        "name": "30 Shot (30 சாட்)",
-        "rate": 1350,
-        "qty": 1,
-        "total": 1350
-      },
-      {
-        "code": "0131",
-        "name": "Ground Chakkar Special (தரை சக்கரம் ஸ்பெசல்)",
-        "rate": 215,
-        "qty": 1,
-        "total": 215
-      },
-      {
-        "code": "0258",
-        "name": "100 wala",
-        "rate": 145,
-        "qty": 5,
-        "total": 725
-      },
-      {
-        "code": "0259",
-        "name": "1K",
-        "rate": 1130,
-        "qty": 1,
-        "total": 1130
-      },
-      {
-        "code": "0124",
-        "name": "30 cm Colour (30 cm கலர்)",
-        "rate": 140,
-        "qty": 2,
-        "total": 280
-      },
-      {
-        "code": "0142",
-        "name": "Flower Pots Super Deluxe (2 Pcs)",
-        "rate": 385,
-        "qty": 1,
-        "total": 385
-      },
-      {
-        "code": "0161",
-        "name": "Tango (1 Pce) (டாங்கோ)",
-        "rate": 160,
-        "qty": 5,
-        "total": 800
-      },
-      {
-        "code": "0196",
-        "name": "Stone (ஸ்டோன்)",
-        "rate": 35,
-        "qty": 1,
-        "total": 35
-      },
-      {
-        "code": "0202",
-        "name": "Top Gun (டாப் கன்)",
-        "rate": 500,
-        "qty": 1,
-        "total": 500
-      },
-      {
-        "code": "0210",
-        "name": "Pambaram (பம்பரம்)",
-        "rate": 270,
-        "qty": 1,
-        "total": 270
-      }
-    ],
-    "discount": 60,
-    "netTotal": 2386,
-    "date": "26/10/2026"
-  },
-  {
-    "billNo": "YF-1032",
-    "custName": "Lokesh",
-    "custPlace": "Bangalore (madivala )",
-    "custPhone": "-",
-    "items": [
-      {
-        "code": "0104",
-        "name": "Mega Gold Lakshmi (மெகா கோல்டு லட்சுமி)",
-        "rate": 150,
-        "qty": 1,
-        "total": 150
-      },
-      {
-        "code": "0107",
-        "name": "Jallikattu (ஜல்லிக்கட்டு)",
-        "rate": 170,
-        "qty": 1,
-        "total": 170
-      },
-      {
-        "code": "0101",
-        "name": "Ganesh / Lion (கணேஷ் / சிங்கம்)",
-        "rate": 140,
-        "qty": 1,
-        "total": 140
-      },
-      {
-        "code": "0117",
-        "name": "12 cm Electric (12 cm எலக்ட்ரிக்)",
-        "rate": 80,
-        "qty": 1,
-        "total": 80
-      },
-      {
-        "code": "0118",
-        "name": "12 cm Colour (12 cm கலர்)",
-        "rate": 90,
-        "qty": 1,
-        "total": 90
-      },
-      {
-        "code": "0115",
-        "name": "10 cm Electric (10 cm எலக்ட்ரிக்)",
-        "rate": 55,
-        "qty": 1,
-        "total": 55
-      },
-      {
-        "code": "0117",
-        "name": "12 cm Electric (12 cm எலக்ட்ரிக்)",
-        "rate": 80,
-        "qty": 1,
-        "total": 80
-      },
-      {
-        "code": "0131",
-        "name": "Ground Chakkar Special (தரை சக்கரம் ஸ்பெசல்)",
-        "rate": 215,
-        "qty": 1,
-        "total": 215
-      },
-      {
-        "code": "0139",
-        "name": "Flower Pots Special (பூந்தொட்டி ஸ்பெசல்)",
-        "rate": 265,
-        "qty": 1,
-        "total": 265
-      },
-      {
-        "code": "0146",
-        "name": "Shower (5 Pcs) (சவர்)",
-        "rate": 275,
-        "qty": 1,
-        "total": 275
-      },
-      {
-        "code": "0232",
-        "name": "2 1/2\" Fancy (3 pcs)",
-        "rate": 825,
-        "qty": 1,
-        "total": 825
-      },
-      {
-        "code": "0160",
-        "name": "2 Mini Fountain (5 Pcs) (2 1/4 மனி பவுண்டைன்)",
-        "rate": 400,
-        "qty": 1,
-        "total": 400
-      },
-      {
-        "code": "0177",
-        "name": "Twinkling Star 45 cm (சாட்டை 45 cm)",
-        "rate": 80,
-        "qty": 1,
-        "total": 80
-      },
-      {
-        "code": "0144",
-        "name": "Colour Rain (5 Pcs) (கலர் மழை)",
-        "rate": 290,
-        "qty": 1,
-        "total": 290
-      }
-    ],
-    "discount": 65,
-    "netTotal": 1090.25,
-    "date": "26/10/2026"
-  },
-  {
-    "billNo": "YF-1031",
-    "custName": "Purusothama",
-    "custPlace": "Bangalore (madivala)",
-    "custPhone": "-",
-    "items": [
-      {
-        "code": "0117",
-        "name": "12 cm Electric (12 cm எலக்ட்ரிக்)",
-        "rate": 80,
-        "qty": 1,
-        "total": 80
-      },
-      {
-        "code": "0118",
-        "name": "12 cm Colour (12 cm கலர்)",
-        "rate": 90,
-        "qty": 1,
-        "total": 90
-      },
-      {
-        "code": "0121",
-        "name": "15 cm Green (15 cm பச்சை)",
-        "rate": 150,
-        "qty": 1,
-        "total": 150
-      },
-      {
-        "code": "0131",
-        "name": "Ground Chakkar Special (தரை சக்கரம் ஸ்பெசல்)",
-        "rate": 215,
-        "qty": 1,
-        "total": 215
-      },
-      {
-        "code": "0248",
-        "name": "15 Shot (15 சாட்)",
-        "rate": 835,
-        "qty": 1,
-        "total": 835
-      },
-      {
-        "code": "0146",
-        "name": "Shower (5 Pcs) (சவர்)",
-        "rate": 275,
-        "qty": 1,
-        "total": 275
-      },
-      {
-        "code": "0165",
-        "name": "Little Dove Fountain (புறா பவுண்டைன் சிறியது)",
-        "rate": 200,
-        "qty": 1,
-        "total": 200
-      },
-      {
-        "code": "0232",
-        "name": "2 1/2\" Fancy (3 pcs)",
-        "rate": 825,
-        "qty": 1,
-        "total": 825
-      },
-      {
-        "code": "0234",
-        "name": "2 1/2\" Fancy (1 pce)",
-        "rate": 430,
-        "qty": 1,
-        "total": 430
-      },
-      {
-        "code": "0222",
-        "name": "Dancing Peacock 5in 1 (மயில் டான்ஸ்)",
-        "rate": 475,
-        "qty": 1,
-        "total": 475
-      },
-      {
-        "code": "0107",
-        "name": "Jallikattu (ஜல்லிக்கட்டு)",
-        "rate": 170,
-        "qty": 1,
-        "total": 170
-      },
-      {
-        "code": "0139",
-        "name": "Flower Pots Special (பூந்தொட்டி ஸ்பெசல்)",
-        "rate": 265,
-        "qty": 1,
-        "total": 265
-      },
-      {
-        "code": "0138",
-        "name": "Flower Pots Big (பூந்தொட்டி பெரியது)",
-        "rate": 220,
-        "qty": 1,
-        "total": 220
-      },
-      {
-        "code": "0177",
-        "name": "Twinkling Star 45 cm (சாட்டை 45 cm)",
-        "rate": 80,
-        "qty": 2,
-        "total": 160
-      },
-      {
-        "code": "0166",
-        "name": "Lemon Tree Silver (சில்வர் எலுமிச்சை மரம்)",
-        "rate": 400,
-        "qty": 1,
-        "total": 400
-      },
-      {
-        "code": "0163",
-        "name": "Rock Star Fountain (ராக் ஸ்டார் பவுண்டைன்)",
-        "rate": 265,
-        "qty": 1,
-        "total": 265
-      },
-      {
-        "code": "0182",
-        "name": "Tri Colour Candle (3 In One) (டிரை கலர் கேண்டில்)",
-        "rate": 380,
-        "qty": 1,
-        "total": 380
-      },
-      {
-        "code": "0159",
-        "name": "Red Apple / Mr.Big / Bingo (சிவப்பு ஆப்பிள்)",
-        "rate": 495,
-        "qty": 1,
-        "total": 495
-      }
-    ],
-    "discount": 65,
-    "netTotal": 2075.5,
-    "date": "26/10/2026"
-  },
-  {
-    "billNo": "YF-1030",
-    "custName": "Ramakrishna ",
-    "custPlace": "Sivakasi",
-    "custPhone": "-",
-    "items": [
-      {
-        "code": "0107",
-        "name": "Jallikattu (ஜல்லிக்கட்டு)",
-        "rate": 170,
-        "qty": 2,
-        "total": 340
-      },
-      {
-        "code": "0166",
-        "name": "Lemon Tree Silver (சில்வர் எலுமிச்சை மரம்)",
-        "rate": 400,
-        "qty": 1,
-        "total": 400
-      },
-      {
-        "code": "0243",
-        "name": "5\" Fancy (5\" பேன்சி)",
-        "rate": 1700,
-        "qty": 1,
-        "total": 1700
-      },
-      {
-        "code": "0238",
-        "name": "Nayara Falls (நயாரா பால்ஸ்)",
-        "rate": 925,
-        "qty": 1,
-        "total": 925
-      },
-      {
-        "code": "0251",
-        "name": "60 Shot (60 சாட்)",
-        "rate": 2700,
-        "qty": 1,
-        "total": 2700
-      },
-      {
-        "code": "0259",
-        "name": "1k",
-        "rate": 1130,
-        "qty": 2,
-        "total": 2260
-      },
-      {
-        "code": "0239",
-        "name": "4\" Fancy (1 pce)",
-        "rate": 1200,
-        "qty": 1,
-        "total": 1200
-      }
-    ],
-    "discount": 65,
-    "netTotal": 3333.75,
-    "date": "26/10/2026"
-  },
-  {
-    "billNo": "YF-1002",
-    "custName": "Hari (BABA)",
-    "custPlace": "Sivakasi",
-    "custPhone": "-",
-    "discount": 60,
-    "netTotal": 5816.4,
-    "date": "08/10/2026",
-    "items": [
-      {
-        "code": "0103",
-        "name": "3 1/2\" Lakshmi (3 1/2\" லட்சுமி)",
-        "rate": 50,
-        "qty": 30,
-        "total": 1500
-      },
-      {
-        "code": "0110",
-        "name": "2 3/4\" Kuruvi (2 3/4\" குருவி)",
-        "rate": 28,
-        "qty": 50,
-        "total": 1400
-      },
-      {
-        "code": "0108",
-        "name": "1/4\" Adiyal (1/4\" அடியாள்)",
-        "rate": 135,
-        "qty": 4,
-        "total": 540
-      },
-      {
-        "code": "0109",
-        "name": "1/2\" Adiyal (1/2\" அடியாள்)",
-        "rate": 270,
-        "qty": 4,
-        "total": 1080
-      },
-      {
-        "code": "0177",
-        "name": "Twinkling Star 45 cm (சாட்டை 45 cm)",
-        "rate": 80,
-        "qty": 5,
-        "total": 400
-      },
-      {
-        "code": "0178",
-        "name": "Twinkling Star 120 cm (சாட்டை 120 cm)",
-        "rate": 245,
-        "qty": 5,
-        "total": 1225
-      },
-      {
-        "code": "0179",
-        "name": "7\" Pencil (7\" பென்சில்)",
-        "rate": 80,
-        "qty": 2,
-        "total": 160
-      },
-      {
-        "code": "0182",
-        "name": "Tri Colour Candle (3 In One) (டிரை கலர் கேண்டில்)",
-        "rate": 380,
-        "qty": 1,
-        "total": 380
-      },
-      {
-        "code": "0181",
-        "name": "Jelly Beem Candle (ஜெல்லி பீம் கேண்டில்)",
-        "rate": 295,
-        "qty": 1,
-        "total": 295
-      },
-      {
-        "code": "0188",
-        "name": "Red Bijili (100 pcs) (சிவப்பு பிஜிலி (100 pcs))",
-        "rate": 110,
-        "qty": 3,
-        "total": 330
-      },
-      {
-        "code": "0191",
-        "name": "Auto Bomb (Green Big) (ஆட்டோ பாம்)",
-        "rate": 150,
-        "qty": 2,
-        "total": 300
-      },
-      {
-        "code": "0232",
-        "name": "2 1/2\" Fancy (3 pcs)",
-        "rate": 825,
-        "qty": 1,
-        "total": 825
-      },
-      {
-        "code": "0233",
-        "name": "Rock Star (3 pcs) (ராக் ஸ்டார் (3 pcs))",
-        "rate": 825,
-        "qty": 1,
-        "total": 825
-      },
-      {
-        "code": "0246",
-        "name": "12 Shot Multi Colour (12 சாட் மல்டிகலர்)",
-        "rate": 500,
-        "qty": 1,
-        "total": 500
-      },
-      {
-        "code": "0249",
-        "name": "30 Shot (30 சாட்)",
-        "rate": 1350,
-        "qty": 1,
-        "total": 1350
-      },
-      {
-        "code": "0130",
-        "name": "Ground Chakkar Big (10 pcs) (தரை சக்கரம் பெரியது)",
-        "rate": 108,
-        "qty": 2,
-        "total": 216
-      },
-      {
-        "code": "0138",
-        "name": "Flower Pots Big (பூந்தொட்டி பெரியது)",
-        "rate": 220,
-        "qty": 2,
-        "total": 440
-      },
-      {
-        "code": "0144",
-        "name": "Colour Rain (5 Pcs) (கலர் மழை)",
-        "rate": 290,
-        "qty": 1,
-        "total": 290
-      },
-      {
-        "code": "0146",
-        "name": "Shower (5 Pcs) (சவர்)",
-        "rate": 275,
-        "qty": 1,
-        "total": 275
-      },
-      {
-        "code": "0120",
-        "name": "15 cm Colour (15 cm கலர்)",
-        "rate": 140,
-        "qty": 2,
-        "total": 280
-      },
-      {
-        "code": "0122",
-        "name": "15 cm Red (15 cm சிவப்பு)",
-        "rate": 160,
-        "qty": 2,
-        "total": 320
-      },
-      {
-        "code": "0119",
-        "name": "15 cm Electric (15 cm எலக்ட்ரிக்)",
-        "rate": 130,
-        "qty": 2,
-        "total": 260
-      },
-      {
-        "code": "0254",
-        "name": "30 Shot Peacock (Liya) (30 சாட் மயில் (லியா))",
-        "rate": 1350,
-        "qty": 1,
-        "total": 1350
-      }
-    ]
-  },
-  {
-    "billNo": "YF-1001",
-    "custName": "sudhan",
-    "custPlace": "madurai",
-    "custPhone": "-",
-    "discount": 0,
-    "netTotal": 15740,
-    "date": "08/10/2026",
-    "items": []
-  }
-];
+window.PRESET_BILLS = [];
 </script>
 
   <script>
@@ -2548,14 +1518,46 @@ window.PRESET_BILLS = [
       if (storedProducts) productsList = JSON.parse(storedProducts);
     } catch (e) {}
 
-    let savedBills = window.PRESET_BILLS ? [...window.PRESET_BILLS] : [];
+    let pendingBillDeletes = [];
+    try {
+      const pd = localStorage.getItem('yogam_pending_bill_deletes');
+      if (pd) pendingBillDeletes = JSON.parse(pd) || [];
+    } catch (e) {}
+
+    let savedBills = [];
     try {
       const storedBills = localStorage.getItem('yogam_bills');
-      if (storedBills) {
+      const billsInited = localStorage.getItem('yogam_bills_initialized') === 'true';
+      if (storedBills !== null) {
         const parsed = JSON.parse(storedBills);
-        if (Array.isArray(parsed) && parsed.length > 0) savedBills = parsed;
+        if (Array.isArray(parsed)) savedBills = parsed;
+      } else if (!billsInited && Array.isArray(window.PRESET_BILLS)) {
+        savedBills = [...window.PRESET_BILLS];
       }
-    } catch (e) {}
+    } catch (e) {
+      savedBills = Array.isArray(window.PRESET_BILLS) ? [...window.PRESET_BILLS] : [];
+    }
+    if (pendingBillDeletes.length > 0) {
+      savedBills = savedBills.filter(b => b && !pendingBillDeletes.includes(b.billNo));
+    }
+
+    function savePendingDeletes() {
+      try {
+        localStorage.setItem('yogam_pending_bill_deletes', JSON.stringify(pendingBillDeletes));
+      } catch (e) {}
+    }
+
+    function flushPendingDeletesToCloud() {
+      if (!firebaseDb || pendingBillDeletes.length === 0) return;
+      const toDelete = [...pendingBillDeletes];
+      toDelete.forEach(billNo => {
+        const key = safeFirebaseKey(billNo);
+        firebaseDb.ref('yogam_app/bills/' + key).remove().then(() => {
+          pendingBillDeletes = pendingBillDeletes.filter(x => x !== billNo);
+          savePendingDeletes();
+        }).catch(err => console.error("Pending delete retry failed:", err));
+      });
+    }
 
     let currentBillItems = [];
 
@@ -2669,27 +1671,55 @@ window.PRESET_BILLS = [
       firebaseDb.ref('.info/connected').on('value', (snap) => {
         if (snap.val() === true) {
           updateCloudBadge('online');
+          flushPendingDeletesToCloud();
         } else {
           updateCloudBadge('offline');
         }
       });
 
-      // Live Sync: Bills
+      // Live Sync: Bills (Fixed: deleted bills NEVER come back after refresh)
       firebaseDb.ref('yogam_app/bills').on('value', (snapshot) => {
         const val = snapshot.val();
         if (!val) {
-          // First-time setup: seed existing bills to Firebase
-          if (savedBills.length > 0) {
-            const seedObj = {};
-            savedBills.forEach((b, idx) => {
-              const key = safeFirebaseKey(b.billNo);
-              seedObj[key] = Object.assign({ updatedAt: Date.now() - idx * 1000 }, b);
-            });
-            firebaseDb.ref('yogam_app/bills').set(seedObj).catch(() => {});
-          }
+          firebaseDb.ref('yogam_app/meta/billsInitialized').once('value').then((metaSnap) => {
+            const cloudAlreadyInitialized = metaSnap.val() === true;
+            const localAlreadyInitialized = localStorage.getItem('yogam_bills_initialized') === 'true';
+
+            if (cloudAlreadyInitialized || localAlreadyInitialized) {
+              // All bills were intentionally deleted — keep empty, DO NOT re-seed PRESET_BILLS
+              savedBills = [];
+              localStorage.setItem('yogam_bills', JSON.stringify([]));
+              localStorage.setItem('yogam_bills_initialized', 'true');
+              renderSavedBillsTable();
+              return;
+            }
+
+            // Genuine first-time setup only
+            if (savedBills.length > 0) {
+              const seedObj = {};
+              savedBills.forEach((b, idx) => {
+                const key = safeFirebaseKey(b.billNo);
+                seedObj[key] = Object.assign({ updatedAt: Date.now() - idx * 1000 }, b);
+              });
+              firebaseDb.ref('yogam_app/meta/billsInitialized').set(true).catch(() => {});
+              localStorage.setItem('yogam_bills_initialized', 'true');
+              firebaseDb.ref('yogam_app/bills').set(seedObj).catch(() => {});
+            } else {
+              firebaseDb.ref('yogam_app/meta/billsInitialized').set(true).catch(() => {});
+              localStorage.setItem('yogam_bills_initialized', 'true');
+            }
+          }).catch(() => {});
           return;
         }
-        const cloudBills = Object.values(val).filter(b => b && b.billNo);
+
+        // Cloud has bills: mark initialized and capture exact Firebase keys
+        localStorage.setItem('yogam_bills_initialized', 'true');
+        firebaseDb.ref('yogam_app/meta/billsInitialized').set(true).catch(() => {});
+
+        const cloudBills = Object.entries(val)
+          .map(([fbKey, b]) => (b && b.billNo ? Object.assign({}, b, { _fbKey: fbKey }) : null))
+          .filter(b => b && !pendingBillDeletes.includes(b.billNo));
+
         cloudBills.sort((a, b) => (b.updatedAt || 0) - (a.updatedAt || 0));
         savedBills = cloudBills;
         localStorage.setItem('yogam_bills', JSON.stringify(savedBills));
@@ -2754,8 +1784,15 @@ window.PRESET_BILLS = [
             const billPayload = Object.assign({}, data, { updatedAt: Date.now() });
             firebaseDb.ref('yogam_app/bills/' + key).set(billPayload).catch(err => console.error(err));
           } else if (type === 'BILL_DELETE' && data && data.billNo) {
-            const key = safeFirebaseKey(data.billNo);
-            firebaseDb.ref('yogam_app/bills/' + key).remove().catch(err => console.error(err));
+            firebaseDb.ref('yogam_app/meta/billsInitialized').set(true).catch(() => {});
+            const keysToRemove = new Set([safeFirebaseKey(data.billNo)]);
+            if (data._fbKey) keysToRemove.add(data._fbKey);
+            Promise.all(
+              Array.from(keysToRemove).map(k => firebaseDb.ref('yogam_app/bills/' + k).remove())
+            ).then(() => {
+              pendingBillDeletes = pendingBillDeletes.filter(x => x !== data.billNo);
+              savePendingDeletes();
+            }).catch(err => console.error("Firebase delete error:", err));
           } else if (type === 'PRODUCTS_SYNC' && Array.isArray(data)) {
             firebaseDb.ref('yogam_app/products').set(data).catch(err => console.error(err));
           } else if (type === 'SETTINGS_SYNC' && data) {
@@ -3090,6 +2127,9 @@ window.PRESET_BILLS = [
         savedBills.unshift(billData);
       }
 
+      pendingBillDeletes = pendingBillDeletes.filter(x => x !== billData.billNo);
+      savePendingDeletes();
+      localStorage.setItem('yogam_bills_initialized', 'true');
       localStorage.setItem('yogam_bills', JSON.stringify(savedBills));
       persistActiveDraft();
       broadcastSyncUpdate('BILL_UPSERT', billData);
@@ -3131,10 +2171,17 @@ window.PRESET_BILLS = [
       const targetBill = savedBills[index];
       if (!targetBill) return;
       if (confirm(`இந்த பில்லை (${targetBill.billNo}) நிச்சயமாக நீக்க விரும்புகிறீர்களா?`)) {
-        savedBills.splice(index, 1);
+        const bNo = targetBill.billNo;
+        const fbKey = targetBill._fbKey || safeFirebaseKey(bNo);
+        if (!pendingBillDeletes.includes(bNo)) {
+          pendingBillDeletes.push(bNo);
+          savePendingDeletes();
+        }
+        savedBills = savedBills.filter(b => b && b.billNo !== bNo);
+        localStorage.setItem('yogam_bills_initialized', 'true');
         localStorage.setItem('yogam_bills', JSON.stringify(savedBills));
         renderSavedBillsTable();
-        broadcastSyncUpdate('BILL_DELETE', { billNo: targetBill.billNo });
+        broadcastSyncUpdate('BILL_DELETE', { billNo: bNo, _fbKey: fbKey });
       }
     }
 

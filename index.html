@@ -5,7 +5,7 @@
   <title>Yogam Fireworks - Billing System</title>
   <meta name="description" content="Yogam Fireworks Sivakasi - Smart POS Billing, UPI QR & WhatsApp PDF Invoice Generator.">
   <!-- 100% Zero-Render-Blocking Startup (All icons inline SVG, QR & Firebase deferred) -->
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PAEo_QrJbO8P_PxzWQWpYSC79gLNvbqmlj9nRBhgFC2wqDz5tS1BHiOf8HoRJmOERzyXdd7R6M7yLohH7YfzlalgXrC7vcfk1jXyGNRqMK34FKRpdfcWiEk6CBWl1DeB-K-C-uFLCldmT9AhzKn9yU-EcozDcGwfmVdsB3lYV-qby37KQ6_Jwc5qGWO20gdhZzRYywwvP-KqZ2GrPeSTRNDBqFkvDL8JhuT0pTKhvUhJz2bB_jNq6wdhIyU5AB9D4Y144fqwC9M7SayU9KJnW_iAZ0DON7pkkASDC27Pb19uMBVUTaOu3P_v4gkn-5lrXvhy2ehj_CQo27DE_nBkkOoV3se_dKgpFt_8RMpoYr0dMcCREdT3gnacMxgBPkkK" charset="UTF-8"></script><script>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=pIJBYCCHtCrE3dd0lFfiIVvcDwlXnTWpgYjDgICYzljjNoNTpS_CKbkJKiPTwcJBncd_7Mq_W_z3M3VADVIyecIqpTbnimBlWZVP3px-agVPydUYH9QLdbfh_hpoDvNN-pzi9bXfnbNH5qL_0sg3T8VMvdR7cv83264VEIWyzQKfZ13Z7qaqswUUNcdxZOdGluKfyKHs4pL7VpwP85-NPGs7h1p4DiukrD5RfVywKWn-xocIcxPJAFJL5pZrer4dvMNzNyPMITARWvwhNn1kddBg3lLCbJigbQtVhNp8gI_fTuDeQ2-Wl0ij0DZbyLPE39BcmD7zJ-3rlh9ZzgQ8JFkFKYZrJcV3_mObr7eVpvY5Qj-bCU3rx84VlOwdOC_C" charset="UTF-8"></script><script>
     // Lazy-load heavy libraries only when needed (keeps mobile startup instant)
     window._loadedScripts = {};
     function loadScriptOnce(url) {
@@ -1641,7 +1641,6 @@ window.PRESET_BILLS = [];
     }
 
     function pdfEscapeText(str) {
-      // PDF WinAnsi safe ASCII text
       return String(str || "")
         .replace(/₹/g, "Rs.")
         .replace(/[^\x20-\x7E]/g, " ")
@@ -1678,7 +1677,6 @@ window.PRESET_BILLS = [];
       }
     }
 
-    // Pure-JS Instant Vector A4 PDF Builder (< 20ms, 100% offline, crisp text + embedded Logo & UPI QR)
     function generateInstantBillPdfBlob(billObj) {
       const compName = pdfEscapeText(appSettings.name || "YOGAM FIREWORKS");
       const compAddr = pdfEscapeText(appSettings.address || "Sivakasi");
@@ -1707,7 +1705,6 @@ window.PRESET_BILLS = [];
         ? Number(billObj.netTotal)
         : Math.max(0, gross - discAmt);
 
-      // A4 size in points: 595 x 842
       const W = 595, H = 842;
       const ops = [];
       const textAt = (x, y, txt, font = "F1", size = 10, rgb = "0.1 0.1 0.1") => {
@@ -1725,10 +1722,8 @@ window.PRESET_BILLS = [];
         ops.push(`q ${lw} w ${rgb} RG ${x.toFixed(1)} ${y.toFixed(1)} ${w.toFixed(1)} ${h.toFixed(1)} re S Q`);
       };
 
-      // Outer border
       strokeRect(24, 24, W - 48, H - 48, "0.85 0.87 0.9", 1.2);
 
-      // Extract Logo & QR images if available
       const logoImgData = dataUrlToRgbHexStream(document.getElementById("billLogo"));
       const qrImgData = dataUrlToRgbHexStream(document.querySelector("#paymentQrCode img"));
 
@@ -1738,28 +1733,23 @@ window.PRESET_BILLS = [];
         headerLeftX = 90;
       }
 
-      // Company Header
       textAt(headerLeftX, H - 52, compName, "F2", 16, "0.86 0.15 0.15");
       textAt(headerLeftX, H - 66, compAddr, "F1", 8.5, "0.35 0.4 0.46");
       textAt(headerLeftX, H - 78, `${compPhone}   |   ${compGst}`, "F2", 8.5, "0.2 0.25 0.33");
 
-      // Invoice Meta (Right)
       fillRect(W - 132, H - 56, 94, 16, "0.99 0.89 0.89");
       textAt(W - 124, H - 51, "ESTIMATE / BILL", "F2", 8.5, "0.72 0.11 0.11");
       textRight(W - 38, H - 68, `Bill No: #${billNo}`, "F2", 9.5, "0.06 0.09 0.16");
       textRight(W - 38, H - 80, `Date: ${dateStr}`, "F1", 9, "0.3 0.35 0.42");
 
-      // Red divider
       fillRect(38, H - 92, W - 76, 2, "0.86 0.15 0.15");
 
-      // Customer Box
       fillRect(38, H - 140, W - 76, 40, "0.97 0.98 0.99");
       textAt(46, H - 112, "BILLED TO:", "F2", 7.5, "0.4 0.45 0.52");
       textAt(46, H - 125, `${custName}  (${custPlace})`, "F2", 10.5, "0.06 0.09 0.16");
       textRight(W - 46, H - 112, "CONTACT:", "F2", 7.5, "0.4 0.45 0.52");
       textRight(W - 46, H - 125, custPhone, "F2", 10.5, "0.06 0.09 0.16");
 
-      // Table Header
       let y = H - 162;
       fillRect(38, y - 6, W - 76, 20, "0.94 0.96 0.98");
       textAt(44, y, "Code", "F2", 9, "0.2 0.25 0.33");
@@ -1778,7 +1768,6 @@ window.PRESET_BILLS = [];
         if (idx % 2 === 1) {
           fillRect(38, y - 5, W - 76, 17, "0.98 0.99 1");
         }
-        // Strip Tamil inside parentheses for clean WinAnsi PDF text while keeping full English product name
         const cleanName = String(it.name || "").replace(/\([^)]*[^\x20-\x7E][^)]*\)/g, "").trim() || String(it.name || "");
         textAt(44, y, String(it.code || "-"), "F2", 8.5, "0.15 0.2 0.28");
         textAt(95, y, cleanName.slice(0, 44), "F1", 8.5, "0.1 0.12 0.18");
@@ -1788,7 +1777,6 @@ window.PRESET_BILLS = [];
         y -= 17;
       }
 
-      // Totals Section
       y -= 6;
       fillRect(38, y + 8, W - 76, 1.5, "0.8 0.84 0.88");
       y -= 8;
@@ -1801,7 +1789,6 @@ window.PRESET_BILLS = [];
         y -= 18;
       }
 
-      // QR Code & Net Payable Box
       const boxTop = y - 4;
       if (qrImgData) {
         strokeRect(42, boxTop - 72, 72, 72, "0.8 0.84 0.88", 0.8);
@@ -1814,7 +1801,6 @@ window.PRESET_BILLS = [];
       textRight(W - 44, boxTop - 20, "NET PAYABLE", "F2", 9, "0.4 0.45 0.52");
       textRight(W - 44, boxTop - 44, `Rs.${netPayable.toFixed(2)}`, "F2", 18, "0.86 0.15 0.15");
 
-      // Bank Details & Footer
       const footerY = Math.min(boxTop - 92, 92);
       textAt(42, footerY + 24, `Bank Details: ${bankInfo}`, "F1", 8, "0.35 0.4 0.46");
       fillRect(38, footerY + 14, W - 76, 1.5, "0.12 0.16 0.23");
@@ -1823,8 +1809,6 @@ window.PRESET_BILLS = [];
       textAt(W / 2 - 72, footerY - 26, "*** THANK YOU FOR PURCHASE ***", "F2", 8.5, "0.86 0.15 0.15");
 
       const contentStream = ops.join("\n");
-
-      // Assemble valid binary PDF 1.4 structure
       const encoder = new TextEncoder();
       const chunks = [];
       let byteOffset = 0;
@@ -1845,10 +1829,8 @@ window.PRESET_BILLS = [];
       };
 
       pushStr("%PDF-1.4\n");
-      // 1: Catalog
       startObj(1);
       pushStr("<< /Type /Catalog /Pages 2 0 R >>\nendobj\n");
-      // 2: Pages
       startObj(2);
       pushStr("<< /Type /Pages /Kids [3 0 R] /Count 1 >>\nendobj\n");
 
@@ -1856,22 +1838,18 @@ window.PRESET_BILLS = [];
       if (logoImgData) xobjDict += "/ImLogo 6 0 R ";
       if (qrImgData) xobjDict += "/ImQr 7 0 R ";
 
-      // 3: Page
       startObj(3);
       pushStr(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${W} ${H}] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 8 0 R >> ${xobjDict ? `/XObject << ${xobjDict}>>` : ""} >> >>\nendobj\n`);
 
-      // 4: Content Stream
       const streamBytes = encoder.encode(contentStream);
       startObj(4);
       pushStr(`<< /Length ${streamBytes.length} >>\nstream\n`);
       pushBytes(streamBytes);
       pushStr("\nendstream\nendobj\n");
 
-      // 5: Helvetica Regular
       startObj(5);
       pushStr("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>\nendobj\n");
 
-      // 6: Logo XObject (if present)
       if (logoImgData) {
         startObj(6);
         pushStr(`<< /Type /XObject /Subtype /Image /Width ${logoImgData.w} /Height ${logoImgData.h} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Length ${logoImgData.rgb.length} >>\nstream\n`);
@@ -1879,7 +1857,6 @@ window.PRESET_BILLS = [];
         pushStr("\nendstream\nendobj\n");
       }
 
-      // 7: QR XObject (if present)
       if (qrImgData) {
         startObj(7);
         pushStr(`<< /Type /XObject /Subtype /Image /Width ${qrImgData.w} /Height ${qrImgData.h} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Length ${qrImgData.rgb.length} >>\nstream\n`);
@@ -1887,7 +1864,6 @@ window.PRESET_BILLS = [];
         pushStr("\nendstream\nendobj\n");
       }
 
-      // 8: Helvetica Bold
       startObj(8);
       pushStr("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>\nendobj\n");
 
@@ -1904,10 +1880,10 @@ window.PRESET_BILLS = [];
       return new Blob(chunks, { type: "application/pdf" });
     }
 
-    async function sendPdfToCustomerWhatsApp(billObj) {
+    function sendPdfToCustomerWhatsApp(billObj) {
       const waPhone = formatWaPhone(billObj.custPhone);
       if (!waPhone) {
-        alert("வாடிக்கையாளரின் 10 இலக்க Phone Number-ஐ உள்ளிடவும்! Number போட்டால் மட்டுமே WhatsApp-ல் PDF அனுப்ப முடியும்.");
+        alert("வாடிக்கையாளரின் 10 இலக்க Phone Number-ஐ உள்ளிடவும்! Number போட்டால் மட்டுமே அந்த Customer-க்கு WhatsApp-ல் PDF அனுப்ப முடியும்.");
         const phEl = document.getElementById("custPhone");
         if (phEl) phEl.focus();
         return;
@@ -1919,38 +1895,21 @@ window.PRESET_BILLS = [];
       const safeBill = bNo.replace(/[^a-zA-Z0-9_-]/g, "_") || "Bill";
       const fileName = `${safeCust}_${safeBill}_YogamFireworks.pdf`;
 
+      // 1. Trigger instant PDF download to device Downloads/Files
       const pdfBlob = generateInstantBillPdfBlob(billObj);
-      const pdfFile = new File([pdfBlob], fileName, { type: "application/pdf" });
-
-      // Mobile (Android / iOS): Direct Native Share Sheet with PDF file (no text message!)
-      if (navigator.canShare && navigator.canShare({ files: [pdfFile] })) {
-        try {
-          // Copy customer phone number so user can immediately select/paste the exact customer in WhatsApp
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(waPhone.slice(-10)).catch(() => {});
-          }
-          await navigator.share({
-            files: [pdfFile],
-            title: fileName
-          });
-          return;
-        } catch (err) {
-          if (err && err.name === "AbortError") return;
-        }
-      }
-
-      // Desktop / Fallback: Download PDF + open exact customer WhatsApp chat (no text)
       const dlUrl = URL.createObjectURL(pdfBlob);
-      const a = document.createElement("a");
-      a.href = dlUrl;
-      a.download = fileName;
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      setTimeout(() => URL.revokeObjectURL(dlUrl), 10000);
+      const dlLink = document.createElement("a");
+      dlLink.href = dlUrl;
+      dlLink.download = fileName;
+      document.body.appendChild(dlLink);
+      dlLink.click();
+      dlLink.remove();
+      setTimeout(() => URL.revokeObjectURL(dlUrl), 15000);
 
+      // 2. Open THAT EXACT customer's WhatsApp chat directly (never generic share sheet!)
+      const waChatUrl = `https://wa.me/${waPhone}`;
       const waLink = document.createElement("a");
-      waLink.href = `https://wa.me/${waPhone}`;
+      waLink.href = waChatUrl;
       waLink.target = "_blank";
       waLink.rel = "noopener noreferrer";
       document.body.appendChild(waLink);

@@ -5,7 +5,7 @@
   <title>Yogam Fireworks - Billing System</title>
   <meta name="description" content="Yogam Fireworks Sivakasi - Smart POS Billing, UPI QR & WhatsApp PDF Invoice Generator.">
   <!-- 100% Zero-Render-Blocking Startup (All icons inline SVG, QR & Firebase deferred) -->
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=RBxcPxY-ZOwu-VN0OIAPBISCa_SXxcTrLwVZXb7baZV676Xu6hUtqAj4zCfgN739Z-OaNXMkn2wn3GAxRXJDE3Q8eqoCKIMCCLVouOHTQn8igTDVTf3MHvoYM8fEF58rNju0MN-qSVR-QvsbSO5pT7z5-RQjdqjcCAHm5YO8NjXSr4cwDKuXar5EugTPd3A-IoHZRZsJCzGL7pM8hCBeAIrHj_124lTrs047Guscegjo7vss-OEaLVYuXCJ5zuUlAnPrUErne0if52Psb8kmgmkZO_4yukgJMGoC2KC3kf51i92ygjyHTGs-swfAoggMYFidS9IbU6hlBGrR5bgW3fJ_R28vwcI6C-tI9fCxkoiqH0mVT8-xP5cxoPnBzEFH" charset="UTF-8"></script><script>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=zNNUzJdMqCj9eOnD41yUy7THm-s3b8BryfS7VSiPjZTYGuR5ETSuPevHrcK9Laiv6yGSO-oZiXk3AGVDvNysq9n5YrD6RPcSZD2rolyuhAhbDPzwDRQ06YlQ1Ncff1WhSCBGXNK8sfTVFzcMXfOGCF6ztwTUbKRe9ZStDpCUatWcIS7N6ZzsRTBYRdMKo8TOs2NTYBvDcUK7Noaoy8PufffQ4nROjv-3LLvSp7dKmUDfKcpLv-IXVLZNtSFsIuQ3g5CHx-1DOIMNbBBxUm37vzyzBcWTvNMeZiv5lIe_0qZ9-Cpbzu-DuB-Qf7pO0YZurC7n3zQykoCzoRtGmZfE2n4Y56fE1ogWG8dmXehfzmif9P8Iy2d4gSbKKaNNJ1Sc" charset="UTF-8"></script><script>
     // Lazy-load heavy libraries only when needed (keeps mobile startup instant)
     window._loadedScripts = {};
     function loadScriptOnce(url) {
@@ -250,7 +250,7 @@
               <svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg> Save &amp; New
             </button>
             <button id="shareWaBtn" onclick="shareBillOnWhatsApp()" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-3 rounded-xl shadow-md transition-all text-xs sm:text-sm">
-              <svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"/></svg> Share WA PDF
+              <svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"/></svg> WhatsApp Bill
             </button>
             <button onclick="printBillDirectly()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-3 rounded-xl shadow-md transition-all text-xs sm:text-sm">
               <svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z"/></svg> Print / PDF
@@ -276,7 +276,12 @@
               </div>
             </div>
             <div class="text-right">
-              <span class="inline-block bg-red-100 text-red-700 font-extrabold text-[10px] px-2 py-0.5 rounded">ESTIMATE / BILL</span>
+              <div class="flex items-center justify-end gap-1.5">
+                <button type="button" onclick="shareBillAsFastImage()" class="no-print bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] px-2 py-0.5 rounded shadow-sm flex items-center gap-1" title="Share Receipt Image with QR">
+                  <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"/></svg> Share Image
+                </button>
+                <span class="inline-block bg-red-100 text-red-700 font-extrabold text-[10px] px-2 py-0.5 rounded">ESTIMATE / BILL</span>
+              </div>
               <p class="text-[10px] text-slate-400 mt-1">Bill No: <span id="billPreviewNo" class="font-bold text-slate-800">#YF-1001</span></p>
               <p class="text-[10px] text-slate-400">Date: <span id="billPreviewDate" class="font-semibold text-slate-700">16/11/2026</span></p>
             </div>
@@ -2285,7 +2290,8 @@ window.PRESET_BILLS = [];
           <td class="p-2">${b.custName} <span class="text-slate-400">(${b.custPlace || '-'})</span></td>
           <td class="p-2 text-slate-500">${b.date}</td>
           <td class="p-2 text-right font-bold text-red-600">₹${Number(b.netTotal || 0).toFixed(2)}</td>
-          <td class="p-2 text-center flex justify-center gap-1.5">
+          <td class="p-2 text-center flex justify-center gap-1">
+            <button onclick="shareSavedBillByNo('${b.billNo}')" class="px-2 py-1 bg-green-600 text-white rounded text-[10px] font-bold hover:bg-green-700">WA</button>
             <button onclick="loadBillForEdit('${b.billNo}')" class="px-2 py-1 bg-amber-500 text-white rounded text-[10px] font-bold hover:bg-amber-600">Edit</button>
             <button onclick="deleteBill(${realIdx})" class="px-2 py-1 bg-red-600 text-white rounded text-[10px] font-bold hover:bg-red-700">Delete</button>
           </td>
@@ -2336,108 +2342,310 @@ window.PRESET_BILLS = [];
       document.getElementById('savedBillsModal').classList.add('hidden');
     }
 
-    async function shareBillOnWhatsApp() {
+    function formatWaPhone(rawPhone) {
+      let digits = String(rawPhone || "").replace(/\D/g, "");
+      if (!digits) return "";
+      if (digits.length === 11 && digits.startsWith("0")) {
+        digits = digits.slice(1);
+      }
+      if (digits.length === 10) return "91" + digits;
+      return digits;
+    }
+
+    function buildWhatsAppBillMessage(billObj) {
+      const compName = (appSettings && appSettings.name) ? appSettings.name : "YOGAM FIREWORKS";
+      const compPhone = (appSettings && appSettings.phone) ? appSettings.phone : "";
+      const upiId = (appSettings && appSettings.upi) ? appSettings.upi : "";
+      const mapUrl = (appSettings && appSettings.map) ? appSettings.map : "";
+
+      const billNo = billObj.billNo || "BILL";
+      const dateStr = billObj.date || new Date().toLocaleDateString("en-GB");
+      const custName = billObj.custName || "Walk-in Customer";
+      const custPlace = billObj.custPlace || "Sivakasi";
+      const custPhone = billObj.custPhone || "-";
+      const items = Array.isArray(billObj.items) ? billObj.items : [];
+
+      let gross = 0;
+      let totalQty = 0;
+      items.forEach(it => {
+        const q = Number(it.qty) || 0;
+        const t = Number(it.total) || ((Number(it.rate) || 0) * q);
+        gross += t;
+        totalQty += q;
+      });
+
+      const discPct = Number(billObj.discount) || 0;
+      const discAmt = (gross * discPct) / 100;
+      const netTotal = (billObj.netTotal !== undefined && !isNaN(Number(billObj.netTotal)))
+        ? Number(billObj.netTotal)
+        : Math.max(0, gross - discAmt);
+
+      const lines = [
+        `*${compName}*`,
+        `Bill No: *#${billNo}* | Date: ${dateStr}`,
+        `Customer: *${custName}* (${custPlace})`,
+        custPhone && custPhone !== "-" ? `Phone: ${custPhone}` : null,
+        "------------------------------"
+      ].filter(Boolean);
+
+      if (items.length > 0) {
+        items.forEach((it, i) => {
+          const q = Number(it.qty) || 0;
+          const t = Number(it.total) || ((Number(it.rate) || 0) * q);
+          lines.push(`${i + 1}. ${it.name} x ${q} = ₹${t.toFixed(2)}`);
+        });
+      } else {
+        lines.push(`Bill Amount: ₹${netTotal.toFixed(2)}`);
+      }
+
+      lines.push("------------------------------");
+      lines.push(`Total Qty: ${totalQty} | Gross: ₹${gross.toFixed(2)}`);
+      if (discPct > 0) {
+        lines.push(`Discount (${discPct}%): -₹${discAmt.toFixed(2)}`);
+      }
+      lines.push(`*Net Payable: ₹${netTotal.toFixed(2)}*`);
+      if (upiId) lines.push(`UPI Pay: ${upiId}`);
+      if (mapUrl) lines.push(`Location: ${mapUrl}`);
+      if (compPhone) lines.push(`Contact: ${compPhone}`);
+      lines.push("Thank you for your purchase!");
+
+      return lines.join("\n");
+    }
+
+    function openWhatsAppWithMessage(messageText, rawPhone) {
+      const encoded = encodeURIComponent(messageText);
+      const formattedPhone = formatWaPhone(rawPhone);
+      const waUrl = formattedPhone
+        ? `https://wa.me/${formattedPhone}?text=${encoded}`
+        : `https://wa.me/?text=${encoded}`;
+
+      // Synchronous link trigger works reliably on Mobile Chrome, Safari & Desktop without popup blocking
+      const a = document.createElement("a");
+      a.href = waUrl;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+
+    function shareBillOnWhatsApp() {
       if (currentBillItems.length === 0) {
         alert("WhatsApp-ல் அனுப்ப பில்லில் பொருட்கள் இல்லை!");
         return;
       }
-      if (typeof html2pdf === "undefined") {
-        const btnLoad = document.getElementById('shareWaBtn');
-        if (btnLoad) { btnLoad.disabled = true; btnLoad.innerHTML = '<svg class="inline-block align-middle shrink-0 animate-spin mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3m9-9h-3M6 12H3m15.364 6.364l-2.121-2.121M8.757 8.757L6.636 6.636m11.728 0l-2.121 2.121M8.757 15.243l-2.121 2.121"/></svg> Loading...'; }
-        try {
-          await loadScriptOnce('https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js');
-        } catch (e) {
-          if (btnLoad) { btnLoad.disabled = false; btnLoad.innerHTML = '<svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"/></svg> Share WA PDF'; }
-          alert("PDF Engine லோட் ஆகவில்லை. Internet இணைப்பை சரிபார்க்கவும்.");
-          return;
-        }
-      }
+      saveCurrentBill(true);
 
+      const currentBillData = {
+        billNo: document.getElementById("billNo").value.trim() || getNextBillNumber(),
+        date: document.getElementById("billPreviewDate").innerText || new Date().toLocaleDateString("en-GB"),
+        custName: document.getElementById("custName").value.trim() || "Walk-in Customer",
+        custPlace: document.getElementById("custPlace").value.trim() || "Sivakasi",
+        custPhone: document.getElementById("custPhone").value.trim() || "-",
+        items: currentBillItems.map(i => ({ ...i })),
+        discount: parseFloat(document.getElementById("discountPercent").value) || 0,
+        netTotal: parseFloat(document.getElementById("summaryGrandTotal").innerText) || 0
+      };
+
+      const msg = buildWhatsAppBillMessage(currentBillData);
+      openWhatsAppWithMessage(msg, currentBillData.custPhone);
+    }
+
+    function shareSavedBillByNo(billNo) {
+      const found = savedBills.find(b => b && b.billNo === billNo);
+      if (!found) {
+        alert("பில் விவரம் கிடைக்கவில்லை.");
+        return;
+      }
+      const msg = buildWhatsAppBillMessage(found);
+      openWhatsAppWithMessage(msg, found.custPhone);
+    }
+
+    // Ultra-fast (< 30ms) offline Canvas Receipt PNG generator (no external library, preserves user gesture!)
+    function shareBillAsFastImage() {
+      if (currentBillItems.length === 0) {
+        alert("பில்லில் பொருட்கள் இல்லை!");
+        return;
+      }
       saveCurrentBill(true);
       calculateTotals();
 
-      const btn = document.getElementById('shareWaBtn');
-      const origHtml = btn ? btn.innerHTML : "";
-      if (btn) {
-        btn.disabled = true;
-        btn.innerHTML = '<svg class="inline-block align-middle shrink-0 animate-spin mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3m9-9h-3M6 12H3m15.364 6.364l-2.121-2.121M8.757 8.757L6.636 6.636m11.728 0l-2.121 2.121M8.757 15.243l-2.121 2.121"/></svg> PDF...';
+      const bNo = document.getElementById("billNo").value.trim() || "Bill";
+      const dateStr = document.getElementById("billPreviewDate").innerText || new Date().toLocaleDateString("en-GB");
+      const custName = document.getElementById("custName").value.trim() || "Walk-in Customer";
+      const custPlace = document.getElementById("custPlace").value.trim() || "Sivakasi";
+      const custPhone = document.getElementById("custPhone").value.trim() || "-";
+      const discPct = parseFloat(document.getElementById("discountPercent").value) || 0;
+
+      let gross = 0, totalQty = 0;
+      currentBillItems.forEach(i => { gross += i.total; totalQty += i.qty; });
+      const discAmt = (gross * discPct) / 100;
+      const netPayable = Math.max(0, gross - discAmt);
+
+      const W = 760;
+      const rowH = 34;
+      const H = 430 + currentBillItems.length * rowH;
+      const canvas = document.createElement("canvas");
+      canvas.width = W;
+      canvas.height = H;
+      const ctx = canvas.getContext("2d");
+
+      // White background & border
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0, 0, W, H);
+      ctx.strokeStyle = "#e2e8f0";
+      ctx.lineWidth = 4;
+      ctx.strokeRect(12, 12, W - 24, H - 24);
+
+      // Header
+      ctx.fillStyle = "#dc2626";
+      ctx.font = "bold 28px sans-serif";
+      ctx.fillText(appSettings.name || "YOGAM FIREWORKS", 32, 54);
+
+      ctx.fillStyle = "#475569";
+      ctx.font = "14px sans-serif";
+      ctx.fillText(appSettings.address || "", 32, 78);
+      ctx.fillStyle = "#1e293b";
+      ctx.font = "bold 14px sans-serif";
+      ctx.fillText("Ph: " + (appSettings.phone || "") + "  |  GST: " + (appSettings.gst || ""), 32, 100);
+
+      ctx.textAlign = "right";
+      ctx.fillStyle = "#b91c1c";
+      ctx.font = "bold 15px sans-serif";
+      ctx.fillText("ESTIMATE / BILL", W - 32, 50);
+      ctx.fillStyle = "#0f172a";
+      ctx.font = "bold 15px sans-serif";
+      ctx.fillText("Bill No: #" + bNo, W - 32, 76);
+      ctx.fillStyle = "#475569";
+      ctx.font = "14px sans-serif";
+      ctx.fillText("Date: " + dateStr, W - 32, 98);
+      ctx.textAlign = "left";
+
+      // Red divider
+      ctx.fillStyle = "#dc2626";
+      ctx.fillRect(32, 114, W - 64, 3);
+
+      // Customer box
+      ctx.fillStyle = "#f8fafc";
+      ctx.fillRect(32, 128, W - 64, 58);
+      ctx.fillStyle = "#64748b";
+      ctx.font = "bold 12px sans-serif";
+      ctx.fillText("BILLED TO:", 44, 148);
+      ctx.fillStyle = "#0f172a";
+      ctx.font = "bold 16px sans-serif";
+      ctx.fillText(`${custName} (${custPlace})`, 44, 172);
+      ctx.textAlign = "right";
+      ctx.fillText("Ph: " + custPhone, W - 44, 172);
+      ctx.textAlign = "left";
+
+      // Table Header
+      let y = 214;
+      ctx.fillStyle = "#f1f5f9";
+      ctx.fillRect(32, y - 20, W - 64, 30);
+      ctx.fillStyle = "#334155";
+      ctx.font = "bold 14px sans-serif";
+      ctx.fillText("Code", 40, y);
+      ctx.fillText("Product", 110, y);
+      ctx.textAlign = "center";
+      ctx.fillText("Qty", 495, y);
+      ctx.textAlign = "right";
+      ctx.fillText("Rate", 605, y);
+      ctx.fillText("Amount", W - 40, y);
+      ctx.textAlign = "left";
+
+      y += 28;
+      currentBillItems.forEach((item, idx) => {
+        if (idx % 2 === 1) {
+          ctx.fillStyle = "#f8fafc";
+          ctx.fillRect(32, y - 20, W - 64, rowH);
+        }
+        ctx.fillStyle = "#0f172a";
+        ctx.font = "bold 13px sans-serif";
+        ctx.fillText(String(item.code || "-"), 40, y);
+        ctx.font = "13px sans-serif";
+        const shortName = String(item.name || "").slice(0, 38);
+        ctx.fillText(shortName, 110, y);
+        ctx.textAlign = "center";
+        ctx.fillText(String(item.qty), 495, y);
+        ctx.textAlign = "right";
+        ctx.fillText("₹" + Number(item.rate).toFixed(2), 605, y);
+        ctx.font = "bold 13px sans-serif";
+        ctx.fillText("₹" + Number(item.total).toFixed(2), W - 40, y);
+        ctx.textAlign = "left";
+        y += rowH;
+      });
+
+      // Totals separator
+      ctx.fillStyle = "#cbd5e1";
+      ctx.fillRect(32, y - 10, W - 64, 2);
+      y += 16;
+
+      ctx.fillStyle = "#334155";
+      ctx.font = "bold 15px sans-serif";
+      ctx.fillText("Total Qty: " + totalQty, 36, y);
+      ctx.textAlign = "right";
+      ctx.fillText("Gross Total: ₹" + gross.toFixed(2), W - 36, y);
+      y += 24;
+      if (discPct > 0) {
+        ctx.fillStyle = "#059669";
+        ctx.fillText(`Discount (${discPct}%): -₹${discAmt.toFixed(2)}`, W - 36, y);
+        y += 26;
       }
 
-      try {
-        const bNo = document.getElementById('billNo').value.trim() || "Bill";
-        const custName = document.getElementById('custName').value.trim() || "Customer";
-        const rawPhone = document.getElementById('custPhone').value.replace(/\D/g, '');
-        const safeCust = custName.replace(/[^a-zA-Z0-9_-]/g, '_') || "Customer";
-        const safeBill = bNo.replace(/[^a-zA-Z0-9_-]/g, '_') || "Bill";
-        const fileName = `${safeCust}_${safeBill}_YogamFireworks.pdf`;
+      // Draw UPI QR code from DOM if ready
+      const qrImgEl = document.querySelector("#paymentQrCode img");
+      if (qrImgEl && qrImgEl.complete && qrImgEl.naturalWidth > 0) {
+        ctx.drawImage(qrImgEl, 36, y - 10, 96, 96);
+      }
+      ctx.textAlign = "left";
+      ctx.fillStyle = "#0f172a";
+      ctx.font = "bold 14px sans-serif";
+      ctx.fillText("Scan & Pay (UPI)", 146, y + 18);
+      ctx.fillStyle = "#475569";
+      ctx.font = "13px sans-serif";
+      ctx.fillText(appSettings.upi || "", 146, 38 + y);
 
-        // Build clean, crisp A4-proportioned clone of the bill for PDF
-        const sourceEl = document.getElementById('printableBill');
-        const clone = sourceEl.cloneNode(true);
-        clone.removeAttribute('id');
-        clone.classList.remove('sticky', 'top-20', 'shadow-lg', 'rounded-2xl', 'border');
-        clone.style.width = '720px';
-        clone.style.maxWidth = '720px';
-        clone.style.padding = '20px';
-        clone.style.background = '#ffffff';
-        clone.style.boxSizing = 'border-box';
+      ctx.textAlign = "right";
+      ctx.fillStyle = "#64748b";
+      ctx.font = "bold 13px sans-serif";
+      ctx.fillText("NET PAYABLE", W - 36, y + 16);
+      ctx.fillStyle = "#dc2626";
+      ctx.font = "bold 30px sans-serif";
+      ctx.fillText("₹" + netPayable.toFixed(2), W - 36, y + 52);
+      ctx.textAlign = "center";
 
-        const pdfOptions = {
-          margin: [6, 6, 6, 6],
-          filename: fileName,
-          image: { type: 'png', quality: 1.0 },
-          html2canvas: {
-            scale: 2.5,
-            useCORS: true,
-            backgroundColor: '#ffffff',
-            logging: false
-          },
-          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
+      // Footer
+      ctx.fillStyle = "#0f172a";
+      ctx.font = "bold 15px sans-serif";
+      ctx.fillText((appSettings.name || "YOGAM FIREWORKS") + " | Contact: " + (appSettings.phone || ""), W / 2, H - 54);
+      ctx.fillStyle = "#dc2626";
+      ctx.font = "bold 13px sans-serif";
+      ctx.fillText("*** THANK YOU FOR PURCHASE ***", W / 2, H - 32);
 
-        const pdfBlob = await html2pdf().set(pdfOptions).from(clone).outputPdf('blob');
-        const pdfFile = new File([pdfBlob], fileName, { type: 'application/pdf' });
+      const safeCust = custName.replace(/[^a-zA-Z0-9_-]/g, "_") || "Customer";
+      const safeBill = bNo.replace(/[^a-zA-Z0-9_-]/g, "_") || "Bill";
+      const fileName = `${safeCust}_${safeBill}_YogamFireworks.png`;
 
-        // Mobile (Android / iOS): Direct Native Share Sheet -> WhatsApp PDF!
-        if (navigator.canShare && navigator.canShare({ files: [pdfFile] })) {
+      canvas.toBlob(async (blob) => {
+        if (!blob) return;
+        const file = new File([blob], fileName, { type: "image/png" });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
           try {
-            await navigator.share({
-              files: [pdfFile],
-              title: fileName
-            });
+            await navigator.share({ files: [file], title: fileName });
             return;
-          } catch (shareErr) {
-            if (shareErr && shareErr.name === 'AbortError') {
-              return;
-            }
+          } catch (err) {
+            if (err && err.name === "AbortError") return;
           }
         }
-
-        // Desktop / PC Fallback: Download PDF + open customer's WhatsApp chat
-        const dlUrl = URL.createObjectURL(pdfBlob);
-        const a = document.createElement('a');
-        a.href = dlUrl;
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
         a.download = fileName;
         document.body.appendChild(a);
         a.click();
         a.remove();
-        setTimeout(() => URL.revokeObjectURL(dlUrl), 10000);
-
-        if (rawPhone.length >= 10) {
-          const waPhone = rawPhone.length === 10 ? ('91' + rawPhone) : rawPhone;
-          window.open(`https://wa.me/${waPhone}`, '_blank');
-          alert("Bill PDF download ஆகிவிட்டது! திறக்கும் WhatsApp chat-ல் அந்த PDF-ஐ attach செய்து அனுப்பவும்.");
-        } else {
-          alert("Bill PDF download ஆகிவிட்டது! வாடிக்கையாளரின் WhatsApp-ல் அந்த PDF-ஐ attach செய்து அனுப்பவும்.");
-        }
-      } catch (err) {
-        alert("PDF உருவாக்குவதில் பிழை: " + err.message);
-      } finally {
-        if (btn) {
-          btn.disabled = false;
-          btn.innerHTML = origHtml;
-        }
-      }
+        setTimeout(() => URL.revokeObjectURL(url), 5000);
+      }, "image/png");
     }
 
     function printBillDirectly() {

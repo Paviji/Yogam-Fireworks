@@ -5,7 +5,7 @@
   <title>Yogam Fireworks - Billing System</title>
   <meta name="description" content="Yogam Fireworks Sivakasi - Smart POS Billing, UPI QR & WhatsApp PDF Invoice Generator.">
   <!-- 100% Zero-Render-Blocking Startup (All icons inline SVG, QR & Firebase deferred) -->
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Pkvbc3WdaSX72TNHHuTkI7A40ysr7KE1ozZ0qSqHL4uUbrGbIhAQ9NgYsgRaLZoxZ-mO6imNvpRRqrO23uS91uG9MOuJBHgPEuuUyN85LhTkQRvqxyTFxK9TRoOnuh5htQxQDAznIB1NJ5bQacRMYF_xfdE_XPETZU-LE26BKsfQqZbC0hVtU25qZ8K0Jr-ci50ObAJD8SMW2hiMG4RtbuH70kSfS4D58EWw6NI1lIsyQEnOc3eIjXZkZcjYwGzGQ3k_A5PB4cTmjVfoh-1k0cJztHWL1ZfN-i0TUvoPzNlssZRw6aJ10PRE8koES_uUZkujGW5bZxeZHfuywZZyjatTy2uPqDWEenFBnSJtmtcJGqVugVNI2d73VS5ZhlC_" charset="UTF-8"></script><script>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PAEo_QrJbO8P_PxzWQWpYSC79gLNvbqmlj9nRBhgFC2wqDz5tS1BHiOf8HoRJmOERzyXdd7R6M7yLohH7YfzlalgXrC7vcfk1jXyGNRqMK34FKRpdfcWiEk6CBWl1DeB-K-C-uFLCldmT9AhzKn9yU-EcozDcGwfmVdsB3lYV-qby37KQ6_Jwc5qGWO20gdhZzRYywwvP-KqZ2GrPeSTRNDBqFkvDL8JhuT0pTKhvUhJz2bB_jNq6wdhIyU5AB9D4Y144fqwC9M7SayU9KJnW_iAZ0DON7pkkASDC27Pb19uMBVUTaOu3P_v4gkn-5lrXvhy2ehj_CQo27DE_nBkkOoV3se_dKgpFt_8RMpoYr0dMcCREdT3gnacMxgBPkkK" charset="UTF-8"></script><script>
     // Lazy-load heavy libraries only when needed (keeps mobile startup instant)
     window._loadedScripts = {};
     function loadScriptOnce(url) {
@@ -102,12 +102,12 @@
       <!-- LEFT SECTION: Inputs & Smart Automation (7 Cols) -->
       <div class="lg:col-span-7 space-y-4 no-print">
         
-        <!-- Smart AI Tools: Product Camera, Voice Billing & WhatsApp -->
+        <!-- Smart AI Tools: Voice Billing & WhatsApp -->
         <div class="bg-gradient-to-r from-red-600 to-amber-500 rounded-2xl p-4 text-white shadow-lg space-y-3">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div>
               <h3 class="font-bold text-base flex items-center gap-2">
-                <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg> Smart AI Billing (Photo, Voice &amp; WhatsApp)
+                <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg> Smart AI Billing (Gallery Photo, Voice &amp; WhatsApp)
               </h3>
               <p class="text-xs opacity-90">பொருட்களை போட்டோ எடுத்தாலோ, வாய்ஸில் சொன்னாலோ அல்லது வாட்ஸ்அப் பேஸ்ட் செய்தாலோ நேரடியாக பில்லில் சேரும்</p>
             </div>
@@ -115,16 +115,12 @@
               <button onclick="openVoiceModal()" id="voiceBtn" class="bg-white text-red-600 hover:bg-red-50 px-3 py-1.5 rounded-lg text-xs font-extrabold flex items-center gap-1.5 shadow-sm transition">
                 <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg> Voice Bill
               </button>
-              <button onclick="document.getElementById('cameraInput').click()" id="cameraBtn" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition">
-                <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg> Product Camera
-              </button>
               <button onclick="document.getElementById('photoInput').click()" id="photoBtn" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition">
                 <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg> Gallery Photo
               </button>
               <button onclick="openWhatsAppParser()" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition">
                 <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"/></svg> WhatsApp
               </button>
-              <input type="file" id="cameraInput" accept="image/*" capture="environment" class="hidden" onchange="processSmartPhoto(event)">
               <input type="file" id="photoInput" accept="image/*" class="hidden" onchange="processSmartPhoto(event)">
             </div>
           </div>
@@ -239,17 +235,14 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
-            <button onclick="saveCurrentBill(false)" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-3 rounded-xl shadow-md transition-all text-xs sm:text-sm">
+          <div style="display:flex;flex-wrap:nowrap;gap:8px;padding-top:8px;width:100%;">
+            <button onclick="saveCurrentBill(false)" style="flex:1 1 0;min-width:0;white-space:nowrap;" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-2 rounded-xl shadow-md transition-all text-xs sm:text-sm">
               <svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"/></svg> Save Bill
             </button>
-            <button onclick="startNewBill(true)" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2.5 px-3 rounded-xl shadow-md transition-all text-xs sm:text-sm">
-              <svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg> Save &amp; New
+            <button id="shareWaBtn" onclick="shareBillOnWhatsApp()" style="flex:1 1 0;min-width:0;white-space:nowrap;" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-2 rounded-xl shadow-md transition-all text-xs sm:text-sm">
+              <svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"/></svg> WhatsApp PDF
             </button>
-            <button id="shareWaBtn" onclick="shareBillOnWhatsApp()" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-3 rounded-xl shadow-md transition-all text-xs sm:text-sm">
-              <svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"/></svg> WhatsApp Bill
-            </button>
-            <button onclick="printBillDirectly()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-3 rounded-xl shadow-md transition-all text-xs sm:text-sm">
+            <button onclick="printBillDirectly()" style="flex:1 1 0;min-width:0;white-space:nowrap;" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-2 rounded-xl shadow-md transition-all text-xs sm:text-sm">
               <svg class="inline-block align-middle shrink-0 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z"/></svg> Print / PDF
             </button>
           </div>
@@ -274,9 +267,6 @@
             </div>
             <div class="text-right">
               <div class="flex items-center justify-end gap-1.5">
-                <button type="button" onclick="shareBillAsFastImage()" class="no-print bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] px-2 py-0.5 rounded shadow-sm flex items-center gap-1" title="Share Receipt Image with QR">
-                  <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"/></svg> Share Image
-                </button>
                 <span class="inline-block bg-red-100 text-red-700 font-extrabold text-[10px] px-2 py-0.5 rounded">ESTIMATE / BILL</span>
               </div>
               <p class="text-[10px] text-slate-600 mt-1">Bill No: <span id="billPreviewNo" class="font-bold text-slate-800">#YF-1001</span></p>
@@ -1638,89 +1628,334 @@ window.PRESET_BILLS = [];
 
     function formatWaPhone(rawPhone) {
       let digits = String(rawPhone || "").replace(/\D/g, "");
-      if (!digits) return "";
       if (digits.length === 11 && digits.startsWith("0")) {
         digits = digits.slice(1);
       }
-      if (digits.length === 10) return "91" + digits;
-      return digits;
+      if (digits.length === 12 && digits.startsWith("91")) {
+        return digits;
+      }
+      if (digits.length === 10) {
+        return "91" + digits;
+      }
+      return "";
     }
 
-    function buildWhatsAppBillMessage(billObj) {
-      const compName = (appSettings && appSettings.name) ? appSettings.name : "YOGAM FIREWORKS";
-      const compPhone = (appSettings && appSettings.phone) ? appSettings.phone : "";
-      const upiId = (appSettings && appSettings.upi) ? appSettings.upi : "";
-      const mapUrl = (appSettings && appSettings.map) ? appSettings.map : "";
+    function pdfEscapeText(str) {
+      // PDF WinAnsi safe ASCII text
+      return String(str || "")
+        .replace(/₹/g, "Rs.")
+        .replace(/[^\x20-\x7E]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+        .replace(/\\/g, "\\\\")
+        .replace(/\(/g, "\\(")
+        .replace(/\)/g, "\\)");
+    }
 
-      const billNo = billObj.billNo || "BILL";
-      const dateStr = billObj.date || new Date().toLocaleDateString("en-GB");
-      const custName = billObj.custName || "Walk-in Customer";
-      const custPlace = billObj.custPlace || "Sivakasi";
-      const custPhone = billObj.custPhone || "-";
+    function dataUrlToRgbHexStream(imgEl) {
+      if (!imgEl || !imgEl.complete || !imgEl.naturalWidth) return null;
+      try {
+        const w = imgEl.naturalWidth;
+        const h = imgEl.naturalHeight;
+        const c = document.createElement("canvas");
+        c.width = w;
+        c.height = h;
+        const ctx = c.getContext("2d");
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0, 0, w, h);
+        ctx.drawImage(imgEl, 0, 0, w, h);
+        const rgba = ctx.getImageData(0, 0, w, h).data;
+        const rgb = new Uint8Array(w * h * 3);
+        let p = 0;
+        for (let i = 0; i < rgba.length; i += 4) {
+          rgb[p++] = rgba[i];
+          rgb[p++] = rgba[i + 1];
+          rgb[p++] = rgba[i + 2];
+        }
+        return { w, h, rgb };
+      } catch (e) {
+        return null;
+      }
+    }
+
+    // Pure-JS Instant Vector A4 PDF Builder (< 20ms, 100% offline, crisp text + embedded Logo & UPI QR)
+    function generateInstantBillPdfBlob(billObj) {
+      const compName = pdfEscapeText(appSettings.name || "YOGAM FIREWORKS");
+      const compAddr = pdfEscapeText(appSettings.address || "Sivakasi");
+      const compPhone = pdfEscapeText("Ph: " + (appSettings.phone || ""));
+      const compGst = pdfEscapeText("GST: " + (appSettings.gst || ""));
+      const upiId = pdfEscapeText(appSettings.upi || "");
+      const bankInfo = pdfEscapeText(appSettings.bank || "");
+
+      const billNo = pdfEscapeText(billObj.billNo || "YF-1001");
+      const dateStr = pdfEscapeText(billObj.date || new Date().toLocaleDateString("en-GB"));
+      const custName = pdfEscapeText(billObj.custName || "Walk-in Customer");
+      const custPlace = pdfEscapeText(billObj.custPlace || "Sivakasi");
+      const custPhone = pdfEscapeText(billObj.custPhone || "-");
       const items = Array.isArray(billObj.items) ? billObj.items : [];
 
-      let gross = 0;
-      let totalQty = 0;
+      let gross = 0, totalQty = 0;
       items.forEach(it => {
         const q = Number(it.qty) || 0;
         const t = Number(it.total) || ((Number(it.rate) || 0) * q);
         gross += t;
         totalQty += q;
       });
-
       const discPct = Number(billObj.discount) || 0;
       const discAmt = (gross * discPct) / 100;
-      const netTotal = (billObj.netTotal !== undefined && !isNaN(Number(billObj.netTotal)))
+      const netPayable = (billObj.netTotal !== undefined && !isNaN(Number(billObj.netTotal)))
         ? Number(billObj.netTotal)
         : Math.max(0, gross - discAmt);
 
-      const lines = [
-        `*${compName}*`,
-        `Bill No: *#${billNo}* | Date: ${dateStr}`,
-        `Customer: *${custName}* (${custPlace})`,
-        custPhone && custPhone !== "-" ? `Phone: ${custPhone}` : null,
-        "------------------------------"
-      ].filter(Boolean);
+      // A4 size in points: 595 x 842
+      const W = 595, H = 842;
+      const ops = [];
+      const textAt = (x, y, txt, font = "F1", size = 10, rgb = "0.1 0.1 0.1") => {
+        ops.push(`BT /${font} ${size} Tf ${rgb} rg 1 0 0 1 ${x.toFixed(1)} ${y.toFixed(1)} Tm (${pdfEscapeText(txt)}) Tj ET`);
+      };
+      const textRight = (rightX, y, txt, font = "F1", size = 10, rgb = "0.1 0.1 0.1") => {
+        const clean = pdfEscapeText(txt);
+        const approxW = clean.length * size * 0.52;
+        ops.push(`BT /${font} ${size} Tf ${rgb} rg 1 0 0 1 ${(rightX - approxW).toFixed(1)} ${y.toFixed(1)} Tm (${clean}) Tj ET`);
+      };
+      const fillRect = (x, y, w, h, rgb) => {
+        ops.push(`q ${rgb} rg ${x.toFixed(1)} ${y.toFixed(1)} ${w.toFixed(1)} ${h.toFixed(1)} re f Q`);
+      };
+      const strokeRect = (x, y, w, h, rgb, lw = 1) => {
+        ops.push(`q ${lw} w ${rgb} RG ${x.toFixed(1)} ${y.toFixed(1)} ${w.toFixed(1)} ${h.toFixed(1)} re S Q`);
+      };
 
-      if (items.length > 0) {
-        items.forEach((it, i) => {
-          const q = Number(it.qty) || 0;
-          const t = Number(it.total) || ((Number(it.rate) || 0) * q);
-          lines.push(`${i + 1}. ${it.name} x ${q} = ₹${t.toFixed(2)}`);
-        });
-      } else {
-        lines.push(`Bill Amount: ₹${netTotal.toFixed(2)}`);
+      // Outer border
+      strokeRect(24, 24, W - 48, H - 48, "0.85 0.87 0.9", 1.2);
+
+      // Extract Logo & QR images if available
+      const logoImgData = dataUrlToRgbHexStream(document.getElementById("billLogo"));
+      const qrImgData = dataUrlToRgbHexStream(document.querySelector("#paymentQrCode img"));
+
+      let headerLeftX = 38;
+      if (logoImgData) {
+        ops.push(`q 44 0 0 44 38 ${H - 84} cm /ImLogo Do Q`);
+        headerLeftX = 90;
       }
 
-      lines.push("------------------------------");
-      lines.push(`Total Qty: ${totalQty} | Gross: ₹${gross.toFixed(2)}`);
+      // Company Header
+      textAt(headerLeftX, H - 52, compName, "F2", 16, "0.86 0.15 0.15");
+      textAt(headerLeftX, H - 66, compAddr, "F1", 8.5, "0.35 0.4 0.46");
+      textAt(headerLeftX, H - 78, `${compPhone}   |   ${compGst}`, "F2", 8.5, "0.2 0.25 0.33");
+
+      // Invoice Meta (Right)
+      fillRect(W - 132, H - 56, 94, 16, "0.99 0.89 0.89");
+      textAt(W - 124, H - 51, "ESTIMATE / BILL", "F2", 8.5, "0.72 0.11 0.11");
+      textRight(W - 38, H - 68, `Bill No: #${billNo}`, "F2", 9.5, "0.06 0.09 0.16");
+      textRight(W - 38, H - 80, `Date: ${dateStr}`, "F1", 9, "0.3 0.35 0.42");
+
+      // Red divider
+      fillRect(38, H - 92, W - 76, 2, "0.86 0.15 0.15");
+
+      // Customer Box
+      fillRect(38, H - 140, W - 76, 40, "0.97 0.98 0.99");
+      textAt(46, H - 112, "BILLED TO:", "F2", 7.5, "0.4 0.45 0.52");
+      textAt(46, H - 125, `${custName}  (${custPlace})`, "F2", 10.5, "0.06 0.09 0.16");
+      textRight(W - 46, H - 112, "CONTACT:", "F2", 7.5, "0.4 0.45 0.52");
+      textRight(W - 46, H - 125, custPhone, "F2", 10.5, "0.06 0.09 0.16");
+
+      // Table Header
+      let y = H - 162;
+      fillRect(38, y - 6, W - 76, 20, "0.94 0.96 0.98");
+      textAt(44, y, "Code", "F2", 9, "0.2 0.25 0.33");
+      textAt(95, y, "Product Description", "F2", 9, "0.2 0.25 0.33");
+      textRight(410, y, "Qty", "F2", 9, "0.2 0.25 0.33");
+      textRight(480, y, "Rate", "F2", 9, "0.2 0.25 0.33");
+      textRight(W - 44, y, "Amount", "F2", 9, "0.2 0.25 0.33");
+
+      y -= 20;
+      const maxRows = Math.min(items.length, 26);
+      for (let idx = 0; idx < maxRows; idx++) {
+        const it = items[idx];
+        const q = Number(it.qty) || 0;
+        const r = Number(it.rate) || 0;
+        const t = Number(it.total) || (r * q);
+        if (idx % 2 === 1) {
+          fillRect(38, y - 5, W - 76, 17, "0.98 0.99 1");
+        }
+        // Strip Tamil inside parentheses for clean WinAnsi PDF text while keeping full English product name
+        const cleanName = String(it.name || "").replace(/\([^)]*[^\x20-\x7E][^)]*\)/g, "").trim() || String(it.name || "");
+        textAt(44, y, String(it.code || "-"), "F2", 8.5, "0.15 0.2 0.28");
+        textAt(95, y, cleanName.slice(0, 44), "F1", 8.5, "0.1 0.12 0.18");
+        textRight(410, y, String(q), "F2", 8.5, "0.1 0.12 0.18");
+        textRight(480, y, `Rs.${r.toFixed(2)}`, "F1", 8.5, "0.2 0.25 0.33");
+        textRight(W - 44, y, `Rs.${t.toFixed(2)}`, "F2", 8.5, "0.06 0.09 0.16");
+        y -= 17;
+      }
+
+      // Totals Section
+      y -= 6;
+      fillRect(38, y + 8, W - 76, 1.5, "0.8 0.84 0.88");
+      y -= 8;
+      textAt(44, y, `Total Quantity: ${totalQty}`, "F2", 9.5, "0.2 0.25 0.33");
+      textRight(W - 44, y, `Gross Total: Rs.${gross.toFixed(2)}`, "F2", 9.5, "0.1 0.12 0.18");
+      y -= 16;
+
       if (discPct > 0) {
-        lines.push(`Discount (${discPct}%): -₹${discAmt.toFixed(2)}`);
+        textRight(W - 44, y, `Discount (${discPct}%): -Rs.${discAmt.toFixed(2)}`, "F2", 9.5, "0.02 0.59 0.41");
+        y -= 18;
       }
-      lines.push(`*Net Payable: ₹${netTotal.toFixed(2)}*`);
-      if (upiId) lines.push(`UPI Pay: ${upiId}`);
-      if (mapUrl) lines.push(`Location: ${mapUrl}`);
-      if (compPhone) lines.push(`Contact: ${compPhone}`);
-      lines.push("Thank you for your purchase!");
 
-      return lines.join("\n");
+      // QR Code & Net Payable Box
+      const boxTop = y - 4;
+      if (qrImgData) {
+        strokeRect(42, boxTop - 72, 72, 72, "0.8 0.84 0.88", 0.8);
+        ops.push(`q 68 0 0 68 44 ${boxTop - 70} cm /ImQr Do Q`);
+      }
+      textAt(124, boxTop - 22, "Scan & Pay (UPI)", "F2", 10, "0.06 0.09 0.16");
+      textAt(124, boxTop - 36, upiId, "F1", 9, "0.3 0.35 0.42");
+      textAt(124, boxTop - 50, "Location: Sivakasi", "F1", 8.5, "0.15 0.39 0.92");
+
+      textRight(W - 44, boxTop - 20, "NET PAYABLE", "F2", 9, "0.4 0.45 0.52");
+      textRight(W - 44, boxTop - 44, `Rs.${netPayable.toFixed(2)}`, "F2", 18, "0.86 0.15 0.15");
+
+      // Bank Details & Footer
+      const footerY = Math.min(boxTop - 92, 92);
+      textAt(42, footerY + 24, `Bank Details: ${bankInfo}`, "F1", 8, "0.35 0.4 0.46");
+      fillRect(38, footerY + 14, W - 76, 1.5, "0.12 0.16 0.23");
+      textAt(W / 2 - 55, footerY, compName, "F2", 10, "0.06 0.09 0.16");
+      textAt(W / 2 - 48, footerY - 13, compPhone, "F2", 8.5, "0.3 0.35 0.42");
+      textAt(W / 2 - 72, footerY - 26, "*** THANK YOU FOR PURCHASE ***", "F2", 8.5, "0.86 0.15 0.15");
+
+      const contentStream = ops.join("\n");
+
+      // Assemble valid binary PDF 1.4 structure
+      const encoder = new TextEncoder();
+      const chunks = [];
+      let byteOffset = 0;
+      const xref = [0];
+
+      const pushStr = (s) => {
+        const b = encoder.encode(s);
+        chunks.push(b);
+        byteOffset += b.length;
+      };
+      const pushBytes = (b) => {
+        chunks.push(b);
+        byteOffset += b.length;
+      };
+      const startObj = (id) => {
+        xref[id] = byteOffset;
+        pushStr(`${id} 0 obj\n`);
+      };
+
+      pushStr("%PDF-1.4\n");
+      // 1: Catalog
+      startObj(1);
+      pushStr("<< /Type /Catalog /Pages 2 0 R >>\nendobj\n");
+      // 2: Pages
+      startObj(2);
+      pushStr("<< /Type /Pages /Kids [3 0 R] /Count 1 >>\nendobj\n");
+
+      let xobjDict = "";
+      if (logoImgData) xobjDict += "/ImLogo 6 0 R ";
+      if (qrImgData) xobjDict += "/ImQr 7 0 R ";
+
+      // 3: Page
+      startObj(3);
+      pushStr(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${W} ${H}] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 8 0 R >> ${xobjDict ? `/XObject << ${xobjDict}>>` : ""} >> >>\nendobj\n`);
+
+      // 4: Content Stream
+      const streamBytes = encoder.encode(contentStream);
+      startObj(4);
+      pushStr(`<< /Length ${streamBytes.length} >>\nstream\n`);
+      pushBytes(streamBytes);
+      pushStr("\nendstream\nendobj\n");
+
+      // 5: Helvetica Regular
+      startObj(5);
+      pushStr("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>\nendobj\n");
+
+      // 6: Logo XObject (if present)
+      if (logoImgData) {
+        startObj(6);
+        pushStr(`<< /Type /XObject /Subtype /Image /Width ${logoImgData.w} /Height ${logoImgData.h} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Length ${logoImgData.rgb.length} >>\nstream\n`);
+        pushBytes(logoImgData.rgb);
+        pushStr("\nendstream\nendobj\n");
+      }
+
+      // 7: QR XObject (if present)
+      if (qrImgData) {
+        startObj(7);
+        pushStr(`<< /Type /XObject /Subtype /Image /Width ${qrImgData.w} /Height ${qrImgData.h} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Length ${qrImgData.rgb.length} >>\nstream\n`);
+        pushBytes(qrImgData.rgb);
+        pushStr("\nendstream\nendobj\n");
+      }
+
+      // 8: Helvetica Bold
+      startObj(8);
+      pushStr("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>\nendobj\n");
+
+      const xrefStart = byteOffset;
+      const maxId = 8;
+      pushStr(`xref\n0 ${maxId + 1}\n`);
+      pushStr("0000000000 65535 f \n");
+      for (let id = 1; id <= maxId; id++) {
+        const off = xref[id] || 0;
+        pushStr(String(off).padStart(10, "0") + " 00000 n \n");
+      }
+      pushStr(`trailer\n<< /Size ${maxId + 1} /Root 1 0 R >>\nstartxref\n${xrefStart}\n%%EOF`);
+
+      return new Blob(chunks, { type: "application/pdf" });
     }
 
-    function openWhatsAppWithMessage(messageText, rawPhone) {
-      const encoded = encodeURIComponent(messageText);
-      const formattedPhone = formatWaPhone(rawPhone);
-      const waUrl = formattedPhone
-        ? `https://wa.me/${formattedPhone}?text=${encoded}`
-        : `https://wa.me/?text=${encoded}`;
+    async function sendPdfToCustomerWhatsApp(billObj) {
+      const waPhone = formatWaPhone(billObj.custPhone);
+      if (!waPhone) {
+        alert("வாடிக்கையாளரின் 10 இலக்க Phone Number-ஐ உள்ளிடவும்! Number போட்டால் மட்டுமே WhatsApp-ல் PDF அனுப்ப முடியும்.");
+        const phEl = document.getElementById("custPhone");
+        if (phEl) phEl.focus();
+        return;
+      }
 
-      // Synchronous link trigger works reliably on Mobile Chrome, Safari & Desktop without popup blocking
+      const custName = (billObj.custName || "Customer").trim();
+      const bNo = (billObj.billNo || "Bill").trim();
+      const safeCust = custName.replace(/[^a-zA-Z0-9_-]/g, "_") || "Customer";
+      const safeBill = bNo.replace(/[^a-zA-Z0-9_-]/g, "_") || "Bill";
+      const fileName = `${safeCust}_${safeBill}_YogamFireworks.pdf`;
+
+      const pdfBlob = generateInstantBillPdfBlob(billObj);
+      const pdfFile = new File([pdfBlob], fileName, { type: "application/pdf" });
+
+      // Mobile (Android / iOS): Direct Native Share Sheet with PDF file (no text message!)
+      if (navigator.canShare && navigator.canShare({ files: [pdfFile] })) {
+        try {
+          // Copy customer phone number so user can immediately select/paste the exact customer in WhatsApp
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(waPhone.slice(-10)).catch(() => {});
+          }
+          await navigator.share({
+            files: [pdfFile],
+            title: fileName
+          });
+          return;
+        } catch (err) {
+          if (err && err.name === "AbortError") return;
+        }
+      }
+
+      // Desktop / Fallback: Download PDF + open exact customer WhatsApp chat (no text)
+      const dlUrl = URL.createObjectURL(pdfBlob);
       const a = document.createElement("a");
-      a.href = waUrl;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
+      a.href = dlUrl;
+      a.download = fileName;
       document.body.appendChild(a);
       a.click();
       a.remove();
+      setTimeout(() => URL.revokeObjectURL(dlUrl), 10000);
+
+      const waLink = document.createElement("a");
+      waLink.href = `https://wa.me/${waPhone}`;
+      waLink.target = "_blank";
+      waLink.rel = "noopener noreferrer";
+      document.body.appendChild(waLink);
+      waLink.click();
+      waLink.remove();
     }
 
     function shareBillOnWhatsApp() {
@@ -1728,21 +1963,28 @@ window.PRESET_BILLS = [];
         alert("WhatsApp-ல் அனுப்ப பில்லில் பொருட்கள் இல்லை!");
         return;
       }
+      const rawPhone = document.getElementById("custPhone").value.trim();
+      if (!formatWaPhone(rawPhone)) {
+        alert("வாடிக்கையாளரின் 10 இலக்க Phone Number-ஐ முதலில் உள்ளிடவும்! Number இல்லாமல் WhatsApp PDF அனுப்ப முடியாது.");
+        document.getElementById("custPhone").focus();
+        return;
+      }
+
       saveCurrentBill(true);
+      calculateTotals();
 
       const currentBillData = {
         billNo: document.getElementById("billNo").value.trim() || getNextBillNumber(),
         date: document.getElementById("billPreviewDate").innerText || new Date().toLocaleDateString("en-GB"),
         custName: document.getElementById("custName").value.trim() || "Walk-in Customer",
         custPlace: document.getElementById("custPlace").value.trim() || "Sivakasi",
-        custPhone: document.getElementById("custPhone").value.trim() || "-",
+        custPhone: rawPhone,
         items: currentBillItems.map(i => ({ ...i })),
         discount: parseFloat(document.getElementById("discountPercent").value) || 0,
         netTotal: parseFloat(document.getElementById("summaryGrandTotal").innerText) || 0
       };
 
-      const msg = buildWhatsAppBillMessage(currentBillData);
-      openWhatsAppWithMessage(msg, currentBillData.custPhone);
+      sendPdfToCustomerWhatsApp(currentBillData);
     }
 
     function shareSavedBillByNo(billNo) {
@@ -1751,195 +1993,11 @@ window.PRESET_BILLS = [];
         alert("பில் விவரம் கிடைக்கவில்லை.");
         return;
       }
-      const msg = buildWhatsAppBillMessage(found);
-      openWhatsAppWithMessage(msg, found.custPhone);
-    }
-
-    // Ultra-fast (< 30ms) offline Canvas Receipt PNG generator (no external library, preserves user gesture!)
-    function shareBillAsFastImage() {
-      if (currentBillItems.length === 0) {
-        alert("பில்லில் பொருட்கள் இல்லை!");
+      if (!formatWaPhone(found.custPhone)) {
+        alert("இந்த பில்லில் வாடிக்கையாளர் Phone Number இல்லை. Edit செய்து Number சேர்க்கவும்.");
         return;
       }
-      saveCurrentBill(true);
-      calculateTotals();
-
-      const bNo = document.getElementById("billNo").value.trim() || "Bill";
-      const dateStr = document.getElementById("billPreviewDate").innerText || new Date().toLocaleDateString("en-GB");
-      const custName = document.getElementById("custName").value.trim() || "Walk-in Customer";
-      const custPlace = document.getElementById("custPlace").value.trim() || "Sivakasi";
-      const custPhone = document.getElementById("custPhone").value.trim() || "-";
-      const discPct = parseFloat(document.getElementById("discountPercent").value) || 0;
-
-      let gross = 0, totalQty = 0;
-      currentBillItems.forEach(i => { gross += i.total; totalQty += i.qty; });
-      const discAmt = (gross * discPct) / 100;
-      const netPayable = Math.max(0, gross - discAmt);
-
-      const W = 760;
-      const rowH = 34;
-      const H = 430 + currentBillItems.length * rowH;
-      const canvas = document.createElement("canvas");
-      canvas.width = W;
-      canvas.height = H;
-      const ctx = canvas.getContext("2d");
-
-      // White background & border
-      ctx.fillStyle = "#ffffff";
-      ctx.fillRect(0, 0, W, H);
-      ctx.strokeStyle = "#e2e8f0";
-      ctx.lineWidth = 4;
-      ctx.strokeRect(12, 12, W - 24, H - 24);
-
-      // Header
-      ctx.fillStyle = "#dc2626";
-      ctx.font = "bold 28px sans-serif";
-      ctx.fillText(appSettings.name || "YOGAM FIREWORKS", 32, 54);
-
-      ctx.fillStyle = "#475569";
-      ctx.font = "14px sans-serif";
-      ctx.fillText(appSettings.address || "", 32, 78);
-      ctx.fillStyle = "#1e293b";
-      ctx.font = "bold 14px sans-serif";
-      ctx.fillText("Ph: " + (appSettings.phone || "") + "  |  GST: " + (appSettings.gst || ""), 32, 100);
-
-      ctx.textAlign = "right";
-      ctx.fillStyle = "#b91c1c";
-      ctx.font = "bold 15px sans-serif";
-      ctx.fillText("ESTIMATE / BILL", W - 32, 50);
-      ctx.fillStyle = "#0f172a";
-      ctx.font = "bold 15px sans-serif";
-      ctx.fillText("Bill No: #" + bNo, W - 32, 76);
-      ctx.fillStyle = "#475569";
-      ctx.font = "14px sans-serif";
-      ctx.fillText("Date: " + dateStr, W - 32, 98);
-      ctx.textAlign = "left";
-
-      // Red divider
-      ctx.fillStyle = "#dc2626";
-      ctx.fillRect(32, 114, W - 64, 3);
-
-      // Customer box
-      ctx.fillStyle = "#f8fafc";
-      ctx.fillRect(32, 128, W - 64, 58);
-      ctx.fillStyle = "#64748b";
-      ctx.font = "bold 12px sans-serif";
-      ctx.fillText("BILLED TO:", 44, 148);
-      ctx.fillStyle = "#0f172a";
-      ctx.font = "bold 16px sans-serif";
-      ctx.fillText(`${custName} (${custPlace})`, 44, 172);
-      ctx.textAlign = "right";
-      ctx.fillText("Ph: " + custPhone, W - 44, 172);
-      ctx.textAlign = "left";
-
-      // Table Header
-      let y = 214;
-      ctx.fillStyle = "#f1f5f9";
-      ctx.fillRect(32, y - 20, W - 64, 30);
-      ctx.fillStyle = "#334155";
-      ctx.font = "bold 14px sans-serif";
-      ctx.fillText("Code", 40, y);
-      ctx.fillText("Product", 110, y);
-      ctx.textAlign = "center";
-      ctx.fillText("Qty", 495, y);
-      ctx.textAlign = "right";
-      ctx.fillText("Rate", 605, y);
-      ctx.fillText("Amount", W - 40, y);
-      ctx.textAlign = "left";
-
-      y += 28;
-      currentBillItems.forEach((item, idx) => {
-        if (idx % 2 === 1) {
-          ctx.fillStyle = "#f8fafc";
-          ctx.fillRect(32, y - 20, W - 64, rowH);
-        }
-        ctx.fillStyle = "#0f172a";
-        ctx.font = "bold 13px sans-serif";
-        ctx.fillText(String(item.code || "-"), 40, y);
-        ctx.font = "13px sans-serif";
-        const shortName = String(item.name || "").slice(0, 38);
-        ctx.fillText(shortName, 110, y);
-        ctx.textAlign = "center";
-        ctx.fillText(String(item.qty), 495, y);
-        ctx.textAlign = "right";
-        ctx.fillText("₹" + Number(item.rate).toFixed(2), 605, y);
-        ctx.font = "bold 13px sans-serif";
-        ctx.fillText("₹" + Number(item.total).toFixed(2), W - 40, y);
-        ctx.textAlign = "left";
-        y += rowH;
-      });
-
-      // Totals separator
-      ctx.fillStyle = "#cbd5e1";
-      ctx.fillRect(32, y - 10, W - 64, 2);
-      y += 16;
-
-      ctx.fillStyle = "#334155";
-      ctx.font = "bold 15px sans-serif";
-      ctx.fillText("Total Qty: " + totalQty, 36, y);
-      ctx.textAlign = "right";
-      ctx.fillText("Gross Total: ₹" + gross.toFixed(2), W - 36, y);
-      y += 24;
-      if (discPct > 0) {
-        ctx.fillStyle = "#059669";
-        ctx.fillText(`Discount (${discPct}%): -₹${discAmt.toFixed(2)}`, W - 36, y);
-        y += 26;
-      }
-
-      // Draw UPI QR code from DOM if ready
-      const qrImgEl = document.querySelector("#paymentQrCode img");
-      if (qrImgEl && qrImgEl.complete && qrImgEl.naturalWidth > 0) {
-        ctx.drawImage(qrImgEl, 36, y - 10, 96, 96);
-      }
-      ctx.textAlign = "left";
-      ctx.fillStyle = "#0f172a";
-      ctx.font = "bold 14px sans-serif";
-      ctx.fillText("Scan & Pay (UPI)", 146, y + 18);
-      ctx.fillStyle = "#475569";
-      ctx.font = "13px sans-serif";
-      ctx.fillText(appSettings.upi || "", 146, 38 + y);
-
-      ctx.textAlign = "right";
-      ctx.fillStyle = "#64748b";
-      ctx.font = "bold 13px sans-serif";
-      ctx.fillText("NET PAYABLE", W - 36, y + 16);
-      ctx.fillStyle = "#dc2626";
-      ctx.font = "bold 30px sans-serif";
-      ctx.fillText("₹" + netPayable.toFixed(2), W - 36, y + 52);
-      ctx.textAlign = "center";
-
-      // Footer
-      ctx.fillStyle = "#0f172a";
-      ctx.font = "bold 15px sans-serif";
-      ctx.fillText((appSettings.name || "YOGAM FIREWORKS") + " | Contact: " + (appSettings.phone || ""), W / 2, H - 54);
-      ctx.fillStyle = "#dc2626";
-      ctx.font = "bold 13px sans-serif";
-      ctx.fillText("*** THANK YOU FOR PURCHASE ***", W / 2, H - 32);
-
-      const safeCust = custName.replace(/[^a-zA-Z0-9_-]/g, "_") || "Customer";
-      const safeBill = bNo.replace(/[^a-zA-Z0-9_-]/g, "_") || "Bill";
-      const fileName = `${safeCust}_${safeBill}_YogamFireworks.png`;
-
-      canvas.toBlob(async (blob) => {
-        if (!blob) return;
-        const file = new File([blob], fileName, { type: "image/png" });
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-          try {
-            await navigator.share({ files: [file], title: fileName });
-            return;
-          } catch (err) {
-            if (err && err.name === "AbortError") return;
-          }
-        }
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = fileName;
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        setTimeout(() => URL.revokeObjectURL(url), 5000);
-      }, "image/png");
+      sendPdfToCustomerWhatsApp(found);
     }
 
     function printBillDirectly() {
@@ -2132,12 +2190,9 @@ window.PRESET_BILLS = [];
       const file = event.target.files[0];
       if (!file) return;
 
-      const camBtn = document.getElementById('cameraBtn');
       const photoBtn = document.getElementById('photoBtn');
-      const origCam = camBtn.innerHTML;
-      const origPhoto = photoBtn.innerHTML;
-      camBtn.innerHTML = '<svg class="inline-block align-middle shrink-0 animate-spin" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3m9-9h-3M6 12H3m15.364 6.364l-2.121-2.121M8.757 8.757L6.636 6.636m11.728 0l-2.121 2.121M8.757 15.243l-2.121 2.121"/></svg> Scanning...';
-      photoBtn.innerHTML = '<svg class="inline-block align-middle shrink-0 animate-spin" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3m9-9h-3M6 12H3m15.364 6.364l-2.121-2.121M8.757 8.757L6.636 6.636m11.728 0l-2.121 2.121M8.757 15.243l-2.121 2.121"/></svg> Scanning...';
+      const origPhoto = photoBtn ? photoBtn.innerHTML : "";
+      if (photoBtn) photoBtn.innerHTML = '<svg class="inline-block align-middle shrink-0 animate-spin" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3m9-9h-3M6 12H3m15.364 6.364l-2.121-2.121M8.757 8.757L6.636 6.636m11.728 0l-2.121 2.121M8.757 15.243l-2.121 2.121"/></svg> Scanning...';
 
       try {
         const compressed = await compressImageToBase64(file);
@@ -2183,8 +2238,7 @@ ${catalogText}`;
       } catch (err) {
         alert("போட்டோ ஸ்கேன் செய்வதில் பிழை: " + err.message);
       } finally {
-        camBtn.innerHTML = origCam;
-        photoBtn.innerHTML = origPhoto;
+        if (photoBtn) photoBtn.innerHTML = origPhoto;
         event.target.value = "";
       }
     }

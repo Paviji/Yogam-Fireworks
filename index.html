@@ -3,14 +3,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yogam Fireworks - Billing System</title>
-  <!-- Icons & Lightweight QR + Firebase (Non-Blocking) -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <!-- Zero-Blocking Instant Startup (Icons, QR & Firebase load in background) -->
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=vjvaNPV-6Gtq7NQf8WC8JnntXTv5z2vTgi6dp1AGGAE3Hh-GF0IWOCU8WnnW767TeAFDmEoXZGgrn-dzv2d7guDpw6Y1nEEvkyYKbyeoejdH24TIjbOsj21PVwHVN0LK80y4-W5lzr24hHT9Hsno-8SlDzX9p238evzqM5FRTW2QyItq2Ihb7QruiaJ6cGUP0d9rPSAz2c2ut5wcdeFrsxwk7zy0i-uewYRo4Dvf2fakpM-kXLnFhiwoGw8xdXxa8E6H4jbml0CxxVfJv2r9QLpcXE6Rb0eKPvAHRVwRbIpoxfVXOgd_5ZOzap9twyfIgMCAmzViPUIOXcWmhy7VXgLap9Zwud6l2geAVGV-N2lhdJtMF7jN3hTr2zgROJdX" charset="UTF-8"></script><script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-  <script defer src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
-  <script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"></noscript>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=itvbO76Sxxbrvr8htyGD-kzJYCqf_vc2dA9rb3KKhmzfDbU0POwPVnuN20tjMinCOzRNHryoKKUrfh1L9j17U5jly31qQcVVYo_hp-1p7i0UtAddpoopqojZzE-Ylrx4WQblXGEnAWma6ZrjohSGCQWfut77MG9ma7FNwBveFnVW13srWuq_H4jo5IBghE-qh104Q-J7l2qZfUV3u137IT8nUN7PbiOVAXDOrSPIcdpJDXOkZzyblADP4YiBatwBH45zZPCEN5W2w0yy7Em2_G5EGdQ8Fo5Io9XaRvOB5QfSzSM5ebCqRvHK6UBgS-PnvZE00XUjS2mCsj62vq0V2s_YuCq4wV-rqQZX2K00Kn0dqkx81Iu4Fqg4P0CG-ujE" charset="UTF-8"></script><script>
     // Lazy-load heavy libraries only when needed (keeps mobile startup instant)
     window._loadedScripts = {};
     function loadScriptOnce(url) {
@@ -1598,13 +1595,28 @@ window.PRESET_BILLS = [];
 
     // --- Launch & Auto-Restore on Minimise/Reopen ---
     window.addEventListener('DOMContentLoaded', () => {
+      // 1. Instant local UI render (0ms network wait)
       applyCompanySettings();
       renderProductDatalists();
       if (!restoreActiveDraft()) {
         startNewBill(false);
       }
-      ensureFirebaseInit();
-      initRealtimeEverywhereSync();
+
+      // 2. Load QR engine in background (non-blocking)
+      loadScriptOnce('https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js')
+        .then(() => { _lastQrUrl = ""; calculateTotals(); })
+        .catch(() => {});
+
+      // 3. Load Firebase SDK in background and connect
+      loadScriptOnce('https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js')
+        .then(() => loadScriptOnce('https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js'))
+        .then(() => {
+          ensureFirebaseInit();
+          initRealtimeEverywhereSync();
+        })
+        .catch(() => {
+          updateCloudBadge('offline');
+        });
     });
 
     // Save state automatically when browser is minimised, backgrounded, or closed
@@ -2326,7 +2338,7 @@ window.PRESET_BILLS = [];
         const btnLoad = document.getElementById('shareWaBtn');
         if (btnLoad) { btnLoad.disabled = true; btnLoad.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> Loading...'; }
         try {
-          await loadScriptOnce('https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js');
+          await loadScriptOnce('https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js');
         } catch (e) {
           if (btnLoad) { btnLoad.disabled = false; btnLoad.innerHTML = '<i class="fa-brands fa-whatsapp mr-1"></i> Share WA PDF'; }
           alert("PDF Engine லோட் ஆகவில்லை. Internet இணைப்பை சரிபார்க்கவும்.");
@@ -3064,7 +3076,7 @@ ${catalogText}`;
     // --- Bulk Excel & Inventory Operations ---
     async function downloadSampleTemplate() {
       if (typeof XLSX === "undefined") {
-        try { await loadScriptOnce('https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js'); }
+        try { await loadScriptOnce('https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js'); }
         catch (e) { alert("Excel Library லோட் ஆகவில்லை."); return; }
       }
       const sampleRows = [
@@ -3081,7 +3093,7 @@ ${catalogText}`;
       const file = event.target.files[0];
       if (!file) return;
       if (typeof XLSX === "undefined") {
-        try { await loadScriptOnce('https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js'); }
+        try { await loadScriptOnce('https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js'); }
         catch (e) { alert("Excel Library லோட் ஆகவில்லை."); event.target.value = ""; return; }
       }
 

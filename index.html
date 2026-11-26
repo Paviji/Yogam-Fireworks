@@ -5,7 +5,7 @@
   <title>Yogam Fireworks - Billing System</title>
   <meta name="description" content="Yogam Fireworks Sivakasi - Smart POS Billing, UPI QR & WhatsApp PDF Invoice Generator.">
   <!-- 100% Zero-Render-Blocking Startup (All icons inline SVG, QR & Firebase deferred) -->
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=zNNUzJdMqCj9eOnD41yUy7THm-s3b8BryfS7VSiPjZTYGuR5ETSuPevHrcK9Laiv6yGSO-oZiXk3AGVDvNysq9n5YrD6RPcSZD2rolyuhAhbDPzwDRQ06YlQ1Ncff1WhSCBGXNK8sfTVFzcMXfOGCF6ztwTUbKRe9ZStDpCUatWcIS7N6ZzsRTBYRdMKo8TOs2NTYBvDcUK7Noaoy8PufffQ4nROjv-3LLvSp7dKmUDfKcpLv-IXVLZNtSFsIuQ3g5CHx-1DOIMNbBBxUm37vzyzBcWTvNMeZiv5lIe_0qZ9-Cpbzu-DuB-Qf7pO0YZurC7n3zQykoCzoRtGmZfE2n4Y56fE1ogWG8dmXehfzmif9P8Iy2d4gSbKKaNNJ1Sc" charset="UTF-8"></script><script>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Pkvbc3WdaSX72TNHHuTkI7A40ysr7KE1ozZ0qSqHL4uUbrGbIhAQ9NgYsgRaLZoxZ-mO6imNvpRRqrO23uS91uG9MOuJBHgPEuuUyN85LhTkQRvqxyTFxK9TRoOnuh5htQxQDAznIB1NJ5bQacRMYF_xfdE_XPETZU-LE26BKsfQqZbC0hVtU25qZ8K0Jr-ci50ObAJD8SMW2hiMG4RtbuH70kSfS4D58EWw6NI1lIsyQEnOc3eIjXZkZcjYwGzGQ3k_A5PB4cTmjVfoh-1k0cJztHWL1ZfN-i0TUvoPzNlssZRw6aJ10PRE8koES_uUZkujGW5bZxeZHfuywZZyjatTy2uPqDWEenFBnSJtmtcJGqVugVNI2d73VS5ZhlC_" charset="UTF-8"></script><script>
     // Lazy-load heavy libraries only when needed (keeps mobile startup instant)
     window._loadedScripts = {};
     function loadScriptOnce(url) {
@@ -78,7 +78,7 @@
           <div>
             <h1 class="text-xl font-black text-red-600 tracking-wider uppercase" id="navCompanyName">YOGAM FIREWORKS</h1>
             <div class="flex items-center gap-2">
-              <p class="text-xs text-slate-400 font-semibold">Smart Billing Terminal</p>
+              <p class="text-xs text-slate-600 font-semibold">Smart Billing Terminal</p>
               <span id="cloudSyncBadge" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-700 border border-amber-300">
                 <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span> Connecting...
               </span>
@@ -87,9 +87,6 @@
         </div>
         
         <div class="flex items-center space-x-2">
-          <button onclick="exportSelfContainedHTML()" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs md:text-sm font-bold flex items-center gap-1.5 shadow">
-            <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg> Save as New HTML
-          </button>
           <button onclick="openSettingsModal()" class="px-3 py-2 bg-slate-100 hover:bg-slate-200 rounded-lg text-slate-700 text-xs md:text-sm font-semibold flex items-center gap-1.5">
             <svg class="inline-block align-middle shrink-0" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg> Company Details
           </button>
@@ -282,20 +279,20 @@
                 </button>
                 <span class="inline-block bg-red-100 text-red-700 font-extrabold text-[10px] px-2 py-0.5 rounded">ESTIMATE / BILL</span>
               </div>
-              <p class="text-[10px] text-slate-400 mt-1">Bill No: <span id="billPreviewNo" class="font-bold text-slate-800">#YF-1001</span></p>
-              <p class="text-[10px] text-slate-400">Date: <span id="billPreviewDate" class="font-semibold text-slate-700">16/11/2026</span></p>
+              <p class="text-[10px] text-slate-600 mt-1">Bill No: <span id="billPreviewNo" class="font-bold text-slate-800">#YF-1001</span></p>
+              <p class="text-[10px] text-slate-600">Date: <span id="billPreviewDate" class="font-semibold text-slate-700">16/11/2026</span></p>
             </div>
           </div>
 
           <!-- Customer Box with Place -->
           <div class="bg-slate-50 rounded p-2 my-2 text-xs flex justify-between">
             <div>
-              <span class="text-slate-400 uppercase text-[9px] font-semibold">Billed To:</span>
+              <span class="text-slate-600 uppercase text-[9px] font-semibold">Billed To:</span>
               <p class="font-bold text-slate-800 text-xs" id="billPreviewCustName">Walk-in Customer</p>
               <p class="text-slate-600 text-[11px] font-semibold" id="billPreviewCustPlace"><svg class="inline-block align-middle shrink-0 text-red-500 mr-1" style="width:1em;height:1em;display:inline-block;vertical-align:-0.125em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span>Sivakasi</span></p>
             </div>
             <div class="text-right">
-              <span class="text-slate-400 uppercase text-[9px] font-semibold">Contact:</span>
+              <span class="text-slate-600 uppercase text-[9px] font-semibold">Contact:</span>
               <p class="font-bold text-slate-800 text-xs" id="billPreviewCustPhone">-</p>
             </div>
           </div>
@@ -438,7 +435,7 @@ Lakshmi - 2"></textarea>
       </div>
 
       <div class="flex items-center gap-3 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
-        <img id="photoReviewThumb" src="" alt="Captured" class="w-16 h-16 object-cover rounded-lg border border-slate-300 hidden">
+        <img id="photoReviewThumb" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="64" height="64" alt="Captured" class="w-16 h-16 object-cover rounded-lg border border-slate-300 hidden">
         <div class="flex-1">
           <p id="photoReviewSummary" class="text-xs font-bold text-slate-700">பொருட்களை சரிபார்த்து பில்லில் சேர்க்கவும்</p>
           <p class="text-[11px] text-slate-500">Quantity மாற்ற வேண்டுமானால் இங்கேயே மாற்றலாம்.</p>
@@ -672,848 +669,35 @@ window.PRESET_SETTINGS = {
   "bank": "A/C: 008501000059404 | IFSC: IOBA0000085 | Bank: Indian Overseas Bank | Sivakasi",
   "aiApiKey": ""
 };
-window.PRESET_PRODUCTS = [
-  {
-    "code": "0101",
-    "name": "Ganesh / Lion (கணேஷ் / சிங்கம்)",
-    "rate": 140
-  },
-  {
-    "code": "0102",
-    "name": "4\" LAKSHMI / BEN 10 (4\" லட்சுமி / பென் 10)",
-    "rate": 65
-  },
-  {
-    "code": "0103",
-    "name": "3 1/2\" Lakshmi (3 1/2\" லட்சுமி)",
-    "rate": 50
-  },
-  {
-    "code": "0104",
-    "name": "Mega Gold Lakshmi (மெகா கோல்டு லட்சுமி)",
-    "rate": 150
-  },
-  {
-    "code": "0105",
-    "name": "Hulk / Deluxe Lakshmi (ஹல்க் / டீலக்ஸ் லட்சுமி)",
-    "rate": 120
-  },
-  {
-    "code": "0106",
-    "name": "2 Sound (2 சவுண்ட்)",
-    "rate": 110
-  },
-  {
-    "code": "0107",
-    "name": "Jallikattu (ஜல்லிக்கட்டு)",
-    "rate": 170
-  },
-  {
-    "code": "0108",
-    "name": "1/4\" Adiyal (1/4\" அடியாள்)",
-    "rate": 135
-  },
-  {
-    "code": "0109",
-    "name": "1/2\" Adiyal (1/2\" அடியாள்)",
-    "rate": 270
-  },
-  {
-    "code": "0110",
-    "name": "2 3/4\" Kuruvi (2 3/4\" குருவி)",
-    "rate": 28
-  },
-  {
-    "code": "0111",
-    "name": "7 cm Electric (7 cm எலக்ட்ரிக்)",
-    "rate": 33
-  },
-  {
-    "code": "0112",
-    "name": "7 cm Colour (7 cm கலர்)",
-    "rate": 40
-  },
-  {
-    "code": "0113",
-    "name": "7 cm Green (7 cm பச்சை)",
-    "rate": 48
-  },
-  {
-    "code": "0114",
-    "name": "7 cm Red (7 cm சிவப்பு)",
-    "rate": 52
-  },
-  {
-    "code": "0115",
-    "name": "10 cm Electric (10 cm எலக்ட்ரிக்)",
-    "rate": 55
-  },
-  {
-    "code": "0116",
-    "name": "10 cm Colour (10 cm கலர்)",
-    "rate": 60
-  },
-  {
-    "code": "0117",
-    "name": "12 cm Electric (12 cm எலக்ட்ரிக்)",
-    "rate": 80
-  },
-  {
-    "code": "0118",
-    "name": "12 cm Colour (12 cm கலர்)",
-    "rate": 90
-  },
-  {
-    "code": "0119",
-    "name": "15 cm Electric (15 cm எலக்ட்ரிக்)",
-    "rate": 130
-  },
-  {
-    "code": "0120",
-    "name": "15 cm Colour (15 cm கலர்)",
-    "rate": 140
-  },
-  {
-    "code": "0121",
-    "name": "15 cm Green (15 cm பச்சை)",
-    "rate": 150
-  },
-  {
-    "code": "0122",
-    "name": "15 cm Red (15 cm சிவப்பு)",
-    "rate": 160
-  },
-  {
-    "code": "0123",
-    "name": "30 cm Electric (30 cm எலக்ட்ரிக்)",
-    "rate": 130
-  },
-  {
-    "code": "0124",
-    "name": "30 cm Colour (30 cm கலர்)",
-    "rate": 140
-  },
-  {
-    "code": "0125",
-    "name": "30 cm Green (30 cm பச்சை)",
-    "rate": 150
-  },
-  {
-    "code": "0126",
-    "name": "30 cm Red (30 cm சிவப்பு)",
-    "rate": 160
-  },
-  {
-    "code": "0127",
-    "name": "50 cm Electric (50 cm எலக்ட்ரிக்)",
-    "rate": 400
-  },
-  {
-    "code": "0128",
-    "name": "50 cm Colour (50 cm கலர்)",
-    "rate": 420
-  },
-  {
-    "code": "0129",
-    "name": "Ground Chakkar Big (5 pcs) (தரை சக்கரம் பெரியது)",
-    "rate": 54
-  },
-  {
-    "code": "0130",
-    "name": "Ground Chakkar Big (10 pcs) (தரை சக்கரம் பெரியது)",
-    "rate": 108
-  },
-  {
-    "code": "0131",
-    "name": "Ground Chakkar Special (தரை சக்கரம் ஸ்பெசல்)",
-    "rate": 215
-  },
-  {
-    "code": "0132",
-    "name": "Ground Chakkar Deluxe (தரை சக்கரம் டீலக்ஸ்)",
-    "rate": 340
-  },
-  {
-    "code": "0133",
-    "name": "Ground Chakkar Big (25 Pcs) (தரை சக்கரம் பெரியது)",
-    "rate": 285
-  },
-  {
-    "code": "0134",
-    "name": "Ground Chakkar Special Green",
-    "rate": 225
-  },
-  {
-    "code": "0135",
-    "name": "Silver Giant Wheel (சில்வர் ஜெயிண்ட் வீல்)",
-    "rate": 440
-  },
-  {
-    "code": "0136",
-    "name": "Whistling Wheel (விசிலிங் வில்)",
-    "rate": 600
-  },
-  {
-    "code": "0137",
-    "name": "Flower Pots Small (பூந்தொட்டி சிறியது)",
-    "rate": 150
-  },
-  {
-    "code": "0138",
-    "name": "Flower Pots Big (பூந்தொட்டி பெரியது)",
-    "rate": 220
-  },
-  {
-    "code": "0139",
-    "name": "Flower Pots Special (பூந்தொட்டி ஸ்பெசல்)",
-    "rate": 265
-  },
-  {
-    "code": "0140",
-    "name": "Flower Pots Asoka (பூந்தொட்டி அசோகா)",
-    "rate": 450
-  },
-  {
-    "code": "0141",
-    "name": "Flower Pots Gaint (பூந்தொட்டி ஜெயிண்ட்)",
-    "rate": 460
-  },
-  {
-    "code": "0142",
-    "name": "Flower Pots Super Deluxe (2 Pcs)",
-    "rate": 385
-  },
-  {
-    "code": "0143",
-    "name": "Colour Koti (10 Pcs) (கலர் கோட்டி)",
-    "rate": 670
-  },
-  {
-    "code": "0144",
-    "name": "Colour Rain (5 Pcs) (கலர் மழை)",
-    "rate": 290
-  },
-  {
-    "code": "0145",
-    "name": "Twix (5 Pcs) (டிவிக்ஸ்)",
-    "rate": 435
-  },
-  {
-    "code": "0146",
-    "name": "Shower (5 Pcs) (சவர்)",
-    "rate": 275
-  },
-  {
-    "code": "0147",
-    "name": "Paw Patrol (5 Pcs) (பாவ் பேட்ரல்)",
-    "rate": 340
-  },
-  {
-    "code": "0148",
-    "name": "Golden Globe (5 Pcs) (கோல்டன் குளோப்)",
-    "rate": 290
-  },
-  {
-    "code": "0149",
-    "name": "Peacock Feather (5 Pcs) (மயில் இறகுகள்)",
-    "rate": 295
-  },
-  {
-    "code": "0150",
-    "name": "Ultra Voltage (2 Pcs) (அல்டிரா வோல்டேஜ்)",
-    "rate": 500
-  },
-  {
-    "code": "0151",
-    "name": "Popcorn (2 Pcs) (பாப்கார்ன்)",
-    "rate": 500
-  },
-  {
-    "code": "0152",
-    "name": "Lollipop Fountain (2 Pcs) (லாலிபாப் பவுண்டைன்)",
-    "rate": 500
-  },
-  {
-    "code": "0153",
-    "name": "Cock Fight (2 Pcs) (சேவல் சண்டை)",
-    "rate": 500
-  },
-  {
-    "code": "0154",
-    "name": "Tri Colour Pots (5 Pcs) (டிரை கலர் பாட்ஸ்)",
-    "rate": 740
-  },
-  {
-    "code": "0155",
-    "name": "Mojito (2 Pcs) (மோஜிட்டோ)",
-    "rate": 500
-  },
-  {
-    "code": "0156",
-    "name": "Feather Touch (2 Pcs) (மயில் டச்)",
-    "rate": 500
-  },
-  {
-    "code": "0157",
-    "name": "H 20 Red Falls (H 20 சிவப்பு பால்ஸ்)",
-    "rate": 420
-  },
-  {
-    "code": "0158",
-    "name": "H 20 Yellow Falls (H 20 மஞ்சள் பால்ஸ்)",
-    "rate": 420
-  },
-  {
-    "code": "0159",
-    "name": "Red Apple / Mr.Big / Bingo (சிவப்பு ஆப்பிள்)",
-    "rate": 495
-  },
-  {
-    "code": "0160",
-    "name": "2 Mini Fountain (5 Pcs) (2 1/4 மனி பவுண்டைன்)",
-    "rate": 400
-  },
-  {
-    "code": "0161",
-    "name": "Tango (1 Pce) (டாங்கோ)",
-    "rate": 160
-  },
-  {
-    "code": "0162",
-    "name": "Spider Man (ஸ்பைடர் மேன்)",
-    "rate": 340
-  },
-  {
-    "code": "0163",
-    "name": "Rock Star Fountain (ராக் ஸ்டார் பவுண்டைன்)",
-    "rate": 265
-  },
-  {
-    "code": "0164",
-    "name": "Harzy Kid Fountain (ஹார்சி கிட்ஸ் பவுண்டைன்)",
-    "rate": 265
-  },
-  {
-    "code": "0165",
-    "name": "Little Dove Fountain (புறா பவுண்டைன் சிறியது)",
-    "rate": 200
-  },
-  {
-    "code": "0166",
-    "name": "Lemon Tree Silver (சில்வர் எலுமிச்சை மரம்)",
-    "rate": 400
-  },
-  {
-    "code": "0167",
-    "name": "Lemon Tree Amber (அம்பர் எலுமிச்சை மரம்)",
-    "rate": 400
-  },
-  {
-    "code": "0168",
-    "name": "Lemon Tree Purple (பர்பிள் எலுமிச்சை மரம்)",
-    "rate": 400
-  },
-  {
-    "code": "0169",
-    "name": "Lemon Tree Yellow (மஞ்சள் எலுமிச்சை மரம்)",
-    "rate": 400
-  },
-  {
-    "code": "0170",
-    "name": "Big Bang / Jazz Music (பிக் பேங்க் / ஜாஷ் மியூசிக்)",
-    "rate": 400
-  },
-  {
-    "code": "0171",
-    "name": "Karaoke Night / Dr. Pepper",
-    "rate": 400
-  },
-  {
-    "code": "0172",
-    "name": "Red Bull (ரெட் புல்)",
-    "rate": 390
-  },
-  {
-    "code": "0173",
-    "name": "Violet Empire (வைலட் எம்பயர்)",
-    "rate": 390
-  },
-  {
-    "code": "0174",
-    "name": "Zombie (ஷூம்பி)",
-    "rate": 390
-  },
-  {
-    "code": "0175",
-    "name": "Sting Blue (ஸ்டிங் புளு)",
-    "rate": 390
-  },
-  {
-    "code": "0176",
-    "name": "Tin Beer (1 Pce) (டின் பீர்)",
-    "rate": 270
-  },
-  {
-    "code": "0177",
-    "name": "Twinkling Star 45 cm (சாட்டை 45 cm)",
-    "rate": 80
-  },
-  {
-    "code": "0178",
-    "name": "Twinkling Star 120 cm (சாட்டை 120 cm)",
-    "rate": 245
-  },
-  {
-    "code": "0179",
-    "name": "7\" Pencil (7\" பென்சில்)",
-    "rate": 80
-  },
-  {
-    "code": "0180",
-    "name": "Roman Candle (Red & Green) (ரோமன் கேண்டில்)",
-    "rate": 290
-  },
-  {
-    "code": "0181",
-    "name": "Jelly Beem Candle (ஜெல்லி பீம் கேண்டில்)",
-    "rate": 295
-  },
-  {
-    "code": "0182",
-    "name": "Tri Colour Candle (3 In One) (டிரை கலர் கேண்டில்)",
-    "rate": 380
-  },
-  {
-    "code": "0183",
-    "name": "Rocket Bomb (5 Pcs) (ராக்கெட் பாம்)",
-    "rate": 110
-  },
-  {
-    "code": "0184",
-    "name": "Lunik Rocket (லூனிக் ராக்கெட்)",
-    "rate": 385
-  },
-  {
-    "code": "0185",
-    "name": "2 Sound Rocket (2 சவுண்ட் ராக்கெட்)",
-    "rate": 420
-  },
-  {
-    "code": "0186",
-    "name": "3 Sound Rocket (3 சவுண்ட் ராக்கெட்)",
-    "rate": 440
-  },
-  {
-    "code": "0187",
-    "name": "Red Bijili (50 pcs) (சிவப்பு பிஜிலி (50 pcs))",
-    "rate": 70
-  },
-  {
-    "code": "0188",
-    "name": "Red Bijili (100 pcs) (சிவப்பு பிஜிலி (100 pcs))",
-    "rate": 110
-  },
-  {
-    "code": "0189",
-    "name": "Stripped Bijili (ஸ்டிரிப்டு பிஜிலி)",
-    "rate": 120
-  },
-  {
-    "code": "0190",
-    "name": "Mini Bullet (மினி புல்லட்)",
-    "rate": 70
-  },
-  {
-    "code": "0191",
-    "name": "Auto Bomb (Green Big) (ஆட்டோ பாம்)",
-    "rate": 150
-  },
-  {
-    "code": "0192",
-    "name": "Hydro Bomb (ஹைட்ரோ பாம்)",
-    "rate": 195
-  },
-  {
-    "code": "0193",
-    "name": "Tiger Bomb (டைகர் பாம்)",
-    "rate": 315
-  },
-  {
-    "code": "0194",
-    "name": "Agni Bomb (அக்னி பாம்)",
-    "rate": 500
-  },
-  {
-    "code": "0195",
-    "name": "Classic Bomb (கிளாசிக் பாம்)",
-    "rate": 355
-  },
-  {
-    "code": "0196",
-    "name": "Stone (ஸ்டோன்)",
-    "rate": 35
-  },
-  {
-    "code": "0197",
-    "name": "Magic Pop (மேஜிக் பாப்)",
-    "rate": 40
-  },
-  {
-    "code": "0198",
-    "name": "Cartoon (5 Pcs) (கார்ட்டூன்)",
-    "rate": 40
-  },
-  {
-    "code": "0199",
-    "name": "Lolipop Stick (லாலிபாப் ஸ்டிக்)",
-    "rate": 630
-  },
-  {
-    "code": "0200",
-    "name": "AK-47 (ஏகே 47)",
-    "rate": 595
-  },
-  {
-    "code": "0201",
-    "name": "Bat & Ball (பேட் & பால்)",
-    "rate": 605
-  },
-  {
-    "code": "0202",
-    "name": "Top Gun (டாப் கன்)",
-    "rate": 500
-  },
-  {
-    "code": "0203",
-    "name": "Selfie Stick (செஃல்பி ஸ்டிக்)",
-    "rate": 340
-  },
-  {
-    "code": "0204",
-    "name": "Hanuman Gatha (ஹனுமான் கதா)",
-    "rate": 495
-  },
-  {
-    "code": "0205",
-    "name": "Emu Egg (ஈமு முட்டை)",
-    "rate": 400
-  },
-  {
-    "code": "0206",
-    "name": "Moving Car (கார்)",
-    "rate": 300
-  },
-  {
-    "code": "0207",
-    "name": "Guitar (கிட்டார்)",
-    "rate": 580
-  },
-  {
-    "code": "0208",
-    "name": "Cylindar Smoke Paper Bomb (சிலிண்டர் சுமோக் பேப்பர் பாம்)",
-    "rate": 735
-  },
-  {
-    "code": "0209",
-    "name": "Dancing Umberla (குடை டான்ஸ்)",
-    "rate": 525
-  },
-  {
-    "code": "0210",
-    "name": "Pambaram (பம்பரம்)",
-    "rate": 270
-  },
-  {
-    "code": "0211",
-    "name": "Photo Flash (போட்டோ ப்ஃளாஷ்)",
-    "rate": 230
-  },
-  {
-    "code": "0212",
-    "name": "Butterfly (பட்டாம்பூச்சி)",
-    "rate": 250
-  },
-  {
-    "code": "0213",
-    "name": "Lotus (6 pcs) (தாமரை)",
-    "rate": 450
-  },
-  {
-    "code": "0214",
-    "name": "90'S Kids (3 pcs) (90'S கிட்ஸ்)",
-    "rate": 420
-  },
-  {
-    "code": "0215",
-    "name": "Peacock (3 in 1) (மயில்)",
-    "rate": 460
-  },
-  {
-    "code": "0216",
-    "name": "7 Shot (7 சாட்)",
-    "rate": 400
-  },
-  {
-    "code": "0217",
-    "name": "Benda (5 pcs) (பெண்டா)",
-    "rate": 475
-  },
-  {
-    "code": "0218",
-    "name": "Ganga Jamuna (5 pcs) (கங்கா ஜமுனா)",
-    "rate": 275
-  },
-  {
-    "code": "0219",
-    "name": "Jubiner Green (6 pcs) (ஜுபினர் பச்சை)",
-    "rate": 390
-  },
-  {
-    "code": "0220",
-    "name": "Colour Smoke (கலர் புகை)",
-    "rate": 350
-  },
-  {
-    "code": "0221",
-    "name": "Helicopter (ஹெலிகாப்டர்)",
-    "rate": 250
-  },
-  {
-    "code": "0222",
-    "name": "Dancing Peacock 5in 1 (மயில் டான்ஸ்)",
-    "rate": 475
-  },
-  {
-    "code": "0223",
-    "name": "Golden Ingot (6 pcs) (கோல்டன் இங்கேட்)",
-    "rate": 390
-  },
-  {
-    "code": "0224",
-    "name": "Siren Mega (சைரன் மெகா)",
-    "rate": 500
-  },
-  {
-    "code": "0225",
-    "name": "Bada Peacock (படா மயில்)",
-    "rate": 1150
-  },
-  {
-    "code": "0226",
-    "name": "Drone (டிரோன்)",
-    "rate": 525
-  },
-  {
-    "code": "0227",
-    "name": "Serpant Big (செர்பன்ட் பிக்)",
-    "rate": 100
-  },
-  {
-    "code": "0228",
-    "name": "Sky Shot (10 pcs) (ஸ்கை சாட்)",
-    "rate": 360
-  },
-  {
-    "code": "0229",
-    "name": "Welcome Hand Shower (3 pcs) (வெல்கம் ஹேண்ட் சவர்)",
-    "rate": 680
-  },
-  {
-    "code": "0230",
-    "name": "Black & White (ப்ளாக் & ஒயிட்)",
-    "rate": 585
-  },
-  {
-    "code": "0231",
-    "name": "1 1/2\" Fancy (1 1/2\" பேன்சி)",
-    "rate": 160
-  },
-  {
-    "code": "0232",
-    "name": "2 1/2\" Fancy (3 pcs)",
-    "rate": 825
-  },
-  {
-    "code": "0233",
-    "name": "Rock Star (3 pcs) (ராக் ஸ்டார் (3 pcs))",
-    "rate": 825
-  },
-  {
-    "code": "0234",
-    "name": "2 1/2\" Fancy (1 pce)",
-    "rate": 430
-  },
-  {
-    "code": "0235",
-    "name": "2 1/2\" Fancy (3 Step)",
-    "rate": 555
-  },
-  {
-    "code": "0236",
-    "name": "3 1/2\" Fancy (7 Step)",
-    "rate": 900
-  },
-  {
-    "code": "0237",
-    "name": "3 1/2\" Fancy (3 1/2\" பேன்சி)",
-    "rate": 900
-  },
-  {
-    "code": "0238",
-    "name": "Nayara Falls (நயாரா பால்ஸ்)",
-    "rate": 925
-  },
-  {
-    "code": "0239",
-    "name": "4\" Fancy (1 pce)",
-    "rate": 1200
-  },
-  {
-    "code": "0240",
-    "name": "4\" Fancy (2 pcs)",
-    "rate": 2300
-  },
-  {
-    "code": "0241",
-    "name": "12 Step Shooter (12 ஸ்டெப் சூட்டர்)",
-    "rate": 1135
-  },
-  {
-    "code": "0242",
-    "name": "Wow Series (Pink, Orange)",
-    "rate": 1325
-  },
-  {
-    "code": "0243",
-    "name": "5\" Fancy (5\" பேன்சி)",
-    "rate": 1700
-  },
-  {
-    "code": "0244",
-    "name": "4\" Double Ball (4\" டேபுள் பால்)",
-    "rate": 1310
-  },
-  {
-    "code": "0245",
-    "name": "3 1/2\" King Fisher (3 1/2\" கிங் பிஸ்ஸர்)",
-    "rate": 900
-  },
-  {
-    "code": "0246",
-    "name": "12 Shot Multi Colour (12 சாட் மல்டிகலர்)",
-    "rate": 500
-  },
-  {
-    "code": "0247",
-    "name": "12 Shot Crackling (12 சாட் கிராக்கிலிங்)",
-    "rate": 500
-  },
-  {
-    "code": "0248",
-    "name": "15 Shot (15 சாட்)",
-    "rate": 835
-  },
-  {
-    "code": "0249",
-    "name": "30 Shot (30 சாட்)",
-    "rate": 1350
-  },
-  {
-    "code": "0250",
-    "name": "50 Shot (50 சாட்)",
-    "rate": 2000
-  },
-  {
-    "code": "0251",
-    "name": "60 Shot (60 சாட்)",
-    "rate": 2700
-  },
-  {
-    "code": "0252",
-    "name": "120 Shot (120 சாட்)",
-    "rate": 5400
-  },
-  {
-    "code": "0253",
-    "name": "240 Shot (240 சாட்)",
-    "rate": 10800
-  },
-  {
-    "code": "0254",
-    "name": "30 Shot Peacock (Liya) (30 சாட் மயில் (லியா))",
-    "rate": 1350
-  },
-  {
-    "code": "0255",
-    "name": "Night Rider (10x10) (நைட் ரைடர் (10x10))",
-    "rate": 11000
-  },
-  {
-    "code": "0256",
-    "name": "28 Chorsa",
-    "rate": 56
-  },
-  {
-    "code": "0257",
-    "name": "56 Giant",
-    "rate": 140
-  },
-  {
-    "code": "0258",
-    "name": "100 wala",
-    "rate": 145
-  },
-  {
-    "code": "0259",
-    "name": "1K",
-    "rate": 1130
-  },
-  {
-    "code": "0260",
-    "name": "2K",
-    "rate": 2260
-  },
-  {
-    "code": "0261",
-    "name": "5K",
-    "rate": 5650
-  },
-  {
-    "code": "0262",
-    "name": "10K",
-    "rate": 11300
-  }
-];
+window.PRESET_PRODUCTS=[{"code":"0101","name":"Ganesh / Lion (கணேஷ் / சிங்கம்)","rate":140},{"code":"0102","name":"4\" LAKSHMI / BEN 10 (4\" லட்சுமி / பென் 10)","rate":65},{"code":"0103","name":"3 1/2\" Lakshmi (3 1/2\" லட்சுமி)","rate":50},{"code":"0104","name":"Mega Gold Lakshmi (மெகா கோல்டு லட்சுமி)","rate":150},{"code":"0105","name":"Hulk / Deluxe Lakshmi (ஹல்க் / டீலக்ஸ் லட்சுமி)","rate":120},{"code":"0106","name":"2 Sound (2 சவுண்ட்)","rate":110},{"code":"0107","name":"Jallikattu (ஜல்லிக்கட்டு)","rate":170},{"code":"0108","name":"1/4\" Adiyal (1/4\" அடியாள்)","rate":135},{"code":"0109","name":"1/2\" Adiyal (1/2\" அடியாள்)","rate":270},{"code":"0110","name":"2 3/4\" Kuruvi (2 3/4\" குருவி)","rate":28},{"code":"0111","name":"7 cm Electric (7 cm எலக்ட்ரிக்)","rate":33},{"code":"0112","name":"7 cm Colour (7 cm கலர்)","rate":40},{"code":"0113","name":"7 cm Green (7 cm பச்சை)","rate":48},{"code":"0114","name":"7 cm Red (7 cm சிவப்பு)","rate":52},{"code":"0115","name":"10 cm Electric (10 cm எலக்ட்ரிக்)","rate":55},{"code":"0116","name":"10 cm Colour (10 cm கலர்)","rate":60},{"code":"0117","name":"12 cm Electric (12 cm எலக்ட்ரிக்)","rate":80},{"code":"0118","name":"12 cm Colour (12 cm கலர்)","rate":90},{"code":"0119","name":"15 cm Electric (15 cm எலக்ட்ரிக்)","rate":130},{"code":"0120","name":"15 cm Colour (15 cm கலர்)","rate":140},{"code":"0121","name":"15 cm Green (15 cm பச்சை)","rate":150},{"code":"0122","name":"15 cm Red (15 cm சிவப்பு)","rate":160},{"code":"0123","name":"30 cm Electric (30 cm எலக்ட்ரிக்)","rate":130},{"code":"0124","name":"30 cm Colour (30 cm கலர்)","rate":140},{"code":"0125","name":"30 cm Green (30 cm பச்சை)","rate":150},{"code":"0126","name":"30 cm Red (30 cm சிவப்பு)","rate":160},{"code":"0127","name":"50 cm Electric (50 cm எலக்ட்ரிக்)","rate":400},{"code":"0128","name":"50 cm Colour (50 cm கலர்)","rate":420},{"code":"0129","name":"Ground Chakkar Big (5 pcs) (தரை சக்கரம் பெரியது)","rate":54},{"code":"0130","name":"Ground Chakkar Big (10 pcs) (தரை சக்கரம் பெரியது)","rate":108},{"code":"0131","name":"Ground Chakkar Special (தரை சக்கரம் ஸ்பெசல்)","rate":215},{"code":"0132","name":"Ground Chakkar Deluxe (தரை சக்கரம் டீலக்ஸ்)","rate":340},{"code":"0133","name":"Ground Chakkar Big (25 Pcs) (தரை சக்கரம் பெரியது)","rate":285},{"code":"0134","name":"Ground Chakkar Special Green","rate":225},{"code":"0135","name":"Silver Giant Wheel (சில்வர் ஜெயிண்ட் வீல்)","rate":440},{"code":"0136","name":"Whistling Wheel (விசிலிங் வில்)","rate":600},{"code":"0137","name":"Flower Pots Small (பூந்தொட்டி சிறியது)","rate":150},{"code":"0138","name":"Flower Pots Big (பூந்தொட்டி பெரியது)","rate":220},{"code":"0139","name":"Flower Pots Special (பூந்தொட்டி ஸ்பெசல்)","rate":265},{"code":"0140","name":"Flower Pots Asoka (பூந்தொட்டி அசோகா)","rate":450},{"code":"0141","name":"Flower Pots Gaint (பூந்தொட்டி ஜெயிண்ட்)","rate":460},{"code":"0142","name":"Flower Pots Super Deluxe (2 Pcs)","rate":385},{"code":"0143","name":"Colour Koti (10 Pcs) (கலர் கோட்டி)","rate":670},{"code":"0144","name":"Colour Rain (5 Pcs) (கலர் மழை)","rate":290},{"code":"0145","name":"Twix (5 Pcs) (டிவிக்ஸ்)","rate":435},{"code":"0146","name":"Shower (5 Pcs) (சவர்)","rate":275},{"code":"0147","name":"Paw Patrol (5 Pcs) (பாவ் பேட்ரல்)","rate":340},{"code":"0148","name":"Golden Globe (5 Pcs) (கோல்டன் குளோப்)","rate":290},{"code":"0149","name":"Peacock Feather (5 Pcs) (மயில் இறகுகள்)","rate":295},{"code":"0150","name":"Ultra Voltage (2 Pcs) (அல்டிரா வோல்டேஜ்)","rate":500},{"code":"0151","name":"Popcorn (2 Pcs) (பாப்கார்ன்)","rate":500},{"code":"0152","name":"Lollipop Fountain (2 Pcs) (லாலிபாப் பவுண்டைன்)","rate":500},{"code":"0153","name":"Cock Fight (2 Pcs) (சேவல் சண்டை)","rate":500},{"code":"0154","name":"Tri Colour Pots (5 Pcs) (டிரை கலர் பாட்ஸ்)","rate":740},{"code":"0155","name":"Mojito (2 Pcs) (மோஜிட்டோ)","rate":500},{"code":"0156","name":"Feather Touch (2 Pcs) (மயில் டச்)","rate":500},{"code":"0157","name":"H 20 Red Falls (H 20 சிவப்பு பால்ஸ்)","rate":420},{"code":"0158","name":"H 20 Yellow Falls (H 20 மஞ்சள் பால்ஸ்)","rate":420},{"code":"0159","name":"Red Apple / Mr.Big / Bingo (சிவப்பு ஆப்பிள்)","rate":495},{"code":"0160","name":"2 Mini Fountain (5 Pcs) (2 1/4 மனி பவுண்டைன்)","rate":400},{"code":"0161","name":"Tango (1 Pce) (டாங்கோ)","rate":160},{"code":"0162","name":"Spider Man (ஸ்பைடர் மேன்)","rate":340},{"code":"0163","name":"Rock Star Fountain (ராக் ஸ்டார் பவுண்டைன்)","rate":265},{"code":"0164","name":"Harzy Kid Fountain (ஹார்சி கிட்ஸ் பவுண்டைன்)","rate":265},{"code":"0165","name":"Little Dove Fountain (புறா பவுண்டைன் சிறியது)","rate":200},{"code":"0166","name":"Lemon Tree Silver (சில்வர் எலுமிச்சை மரம்)","rate":400},{"code":"0167","name":"Lemon Tree Amber (அம்பர் எலுமிச்சை மரம்)","rate":400},{"code":"0168","name":"Lemon Tree Purple (பர்பிள் எலுமிச்சை மரம்)","rate":400},{"code":"0169","name":"Lemon Tree Yellow (மஞ்சள் எலுமிச்சை மரம்)","rate":400},{"code":"0170","name":"Big Bang / Jazz Music (பிக் பேங்க் / ஜாஷ் மியூசிக்)","rate":400},{"code":"0171","name":"Karaoke Night / Dr. Pepper","rate":400},{"code":"0172","name":"Red Bull (ரெட் புல்)","rate":390},{"code":"0173","name":"Violet Empire (வைலட் எம்பயர்)","rate":390},{"code":"0174","name":"Zombie (ஷூம்பி)","rate":390},{"code":"0175","name":"Sting Blue (ஸ்டிங் புளு)","rate":390},{"code":"0176","name":"Tin Beer (1 Pce) (டின் பீர்)","rate":270},{"code":"0177","name":"Twinkling Star 45 cm (சாட்டை 45 cm)","rate":80},{"code":"0178","name":"Twinkling Star 120 cm (சாட்டை 120 cm)","rate":245},{"code":"0179","name":"7\" Pencil (7\" பென்சில்)","rate":80},{"code":"0180","name":"Roman Candle (Red & Green) (ரோமன் கேண்டில்)","rate":290},{"code":"0181","name":"Jelly Beem Candle (ஜெல்லி பீம் கேண்டில்)","rate":295},{"code":"0182","name":"Tri Colour Candle (3 In One) (டிரை கலர் கேண்டில்)","rate":380},{"code":"0183","name":"Rocket Bomb (5 Pcs) (ராக்கெட் பாம்)","rate":110},{"code":"0184","name":"Lunik Rocket (லூனிக் ராக்கெட்)","rate":385},{"code":"0185","name":"2 Sound Rocket (2 சவுண்ட் ராக்கெட்)","rate":420},{"code":"0186","name":"3 Sound Rocket (3 சவுண்ட் ராக்கெட்)","rate":440},{"code":"0187","name":"Red Bijili (50 pcs) (சிவப்பு பிஜிலி (50 pcs))","rate":70},{"code":"0188","name":"Red Bijili (100 pcs) (சிவப்பு பிஜிலி (100 pcs))","rate":110},{"code":"0189","name":"Stripped Bijili (ஸ்டிரிப்டு பிஜிலி)","rate":120},{"code":"0190","name":"Mini Bullet (மினி புல்லட்)","rate":70},{"code":"0191","name":"Auto Bomb (Green Big) (ஆட்டோ பாம்)","rate":150},{"code":"0192","name":"Hydro Bomb (ஹைட்ரோ பாம்)","rate":195},{"code":"0193","name":"Tiger Bomb (டைகர் பாம்)","rate":315},{"code":"0194","name":"Agni Bomb (அக்னி பாம்)","rate":500},{"code":"0195","name":"Classic Bomb (கிளாசிக் பாம்)","rate":355},{"code":"0196","name":"Stone (ஸ்டோன்)","rate":35},{"code":"0197","name":"Magic Pop (மேஜிக் பாப்)","rate":40},{"code":"0198","name":"Cartoon (5 Pcs) (கார்ட்டூன்)","rate":40},{"code":"0199","name":"Lolipop Stick (லாலிபாப் ஸ்டிக்)","rate":630},{"code":"0200","name":"AK-47 (ஏகே 47)","rate":595},{"code":"0201","name":"Bat & Ball (பேட் & பால்)","rate":605},{"code":"0202","name":"Top Gun (டாப் கன்)","rate":500},{"code":"0203","name":"Selfie Stick (செஃல்பி ஸ்டிக்)","rate":340},{"code":"0204","name":"Hanuman Gatha (ஹனுமான் கதா)","rate":495},{"code":"0205","name":"Emu Egg (ஈமு முட்டை)","rate":400},{"code":"0206","name":"Moving Car (கார்)","rate":300},{"code":"0207","name":"Guitar (கிட்டார்)","rate":580},{"code":"0208","name":"Cylindar Smoke Paper Bomb (சிலிண்டர் சுமோக் பேப்பர் பாம்)","rate":735},{"code":"0209","name":"Dancing Umberla (குடை டான்ஸ்)","rate":525},{"code":"0210","name":"Pambaram (பம்பரம்)","rate":270},{"code":"0211","name":"Photo Flash (போட்டோ ப்ஃளாஷ்)","rate":230},{"code":"0212","name":"Butterfly (பட்டாம்பூச்சி)","rate":250},{"code":"0213","name":"Lotus (6 pcs) (தாமரை)","rate":450},{"code":"0214","name":"90'S Kids (3 pcs) (90'S கிட்ஸ்)","rate":420},{"code":"0215","name":"Peacock (3 in 1) (மயில்)","rate":460},{"code":"0216","name":"7 Shot (7 சாட்)","rate":400},{"code":"0217","name":"Benda (5 pcs) (பெண்டா)","rate":475},{"code":"0218","name":"Ganga Jamuna (5 pcs) (கங்கா ஜமுனா)","rate":275},{"code":"0219","name":"Jubiner Green (6 pcs) (ஜுபினர் பச்சை)","rate":390},{"code":"0220","name":"Colour Smoke (கலர் புகை)","rate":350},{"code":"0221","name":"Helicopter (ஹெலிகாப்டர்)","rate":250},{"code":"0222","name":"Dancing Peacock 5in 1 (மயில் டான்ஸ்)","rate":475},{"code":"0223","name":"Golden Ingot (6 pcs) (கோல்டன் இங்கேட்)","rate":390},{"code":"0224","name":"Siren Mega (சைரன் மெகா)","rate":500},{"code":"0225","name":"Bada Peacock (படா மயில்)","rate":1150},{"code":"0226","name":"Drone (டிரோன்)","rate":525},{"code":"0227","name":"Serpant Big (செர்பன்ட் பிக்)","rate":100},{"code":"0228","name":"Sky Shot (10 pcs) (ஸ்கை சாட்)","rate":360},{"code":"0229","name":"Welcome Hand Shower (3 pcs) (வெல்கம் ஹேண்ட் சவர்)","rate":680},{"code":"0230","name":"Black & White (ப்ளாக் & ஒயிட்)","rate":585},{"code":"0231","name":"1 1/2\" Fancy (1 1/2\" பேன்சி)","rate":160},{"code":"0232","name":"2 1/2\" Fancy (3 pcs)","rate":825},{"code":"0233","name":"Rock Star (3 pcs) (ராக் ஸ்டார் (3 pcs))","rate":825},{"code":"0234","name":"2 1/2\" Fancy (1 pce)","rate":430},{"code":"0235","name":"2 1/2\" Fancy (3 Step)","rate":555},{"code":"0236","name":"3 1/2\" Fancy (7 Step)","rate":900},{"code":"0237","name":"3 1/2\" Fancy (3 1/2\" பேன்சி)","rate":900},{"code":"0238","name":"Nayara Falls (நயாரா பால்ஸ்)","rate":925},{"code":"0239","name":"4\" Fancy (1 pce)","rate":1200},{"code":"0240","name":"4\" Fancy (2 pcs)","rate":2300},{"code":"0241","name":"12 Step Shooter (12 ஸ்டெப் சூட்டர்)","rate":1135},{"code":"0242","name":"Wow Series (Pink, Orange)","rate":1325},{"code":"0243","name":"5\" Fancy (5\" பேன்சி)","rate":1700},{"code":"0244","name":"4\" Double Ball (4\" டேபுள் பால்)","rate":1310},{"code":"0245","name":"3 1/2\" King Fisher (3 1/2\" கிங் பிஸ்ஸர்)","rate":900},{"code":"0246","name":"12 Shot Multi Colour (12 சாட் மல்டிகலர்)","rate":500},{"code":"0247","name":"12 Shot Crackling (12 சாட் கிராக்கிலிங்)","rate":500},{"code":"0248","name":"15 Shot (15 சாட்)","rate":835},{"code":"0249","name":"30 Shot (30 சாட்)","rate":1350},{"code":"0250","name":"50 Shot (50 சாட்)","rate":2000},{"code":"0251","name":"60 Shot (60 சாட்)","rate":2700},{"code":"0252","name":"120 Shot (120 சாட்)","rate":5400},{"code":"0253","name":"240 Shot (240 சாட்)","rate":10800},{"code":"0254","name":"30 Shot Peacock (Liya) (30 சாட் மயில் (லியா))","rate":1350},{"code":"0255","name":"Night Rider (10x10) (நைட் ரைடர் (10x10))","rate":11000},{"code":"0256","name":"28 Chorsa","rate":56},{"code":"0257","name":"56 Giant","rate":140},{"code":"0258","name":"100 wala","rate":145},{"code":"0259","name":"1K","rate":1130},{"code":"0260","name":"2K","rate":2260},{"code":"0261","name":"5K","rate":5650},{"code":"0262","name":"10K","rate":11300}];
 window.PRESET_BILLS = [];
 </script>
 
   <script>
-    // --- Firebase Realtime Database Configuration (Central Cloud Storage) ---
-    const firebaseConfig = {
-      apiKey: "AIzaSyDkcPka4PX8oi5R5iahSZmW0jhTADjNoiM",
-      authDomain: "yogam-fireworks-sivakasi.firebaseapp.com",
-      databaseURL: "https://yogam-fireworks-sivakasi-default-rtdb.firebaseio.com",
-      projectId: "yogam-fireworks-sivakasi",
-      storageBucket: "yogam-fireworks-sivakasi.firebasestorage.app",
-      messagingSenderId: "141250651717",
-      appId: "1:141250651717:web:b9e28c7eacefcc43e9a52c",
-      measurementId: "G-Y4R4NBNZVQ"
-    };
+    // --- Ultra-Fast Native Firebase Realtime Database REST Sync (Zero SDK Bloat, Zero Hanging Sockets) ---
+    const FIREBASE_RTDB_URL = "https://yogam-fireworks-sivakasi-default-rtdb.firebaseio.com";
 
-    let firebaseDb = null;
-    function ensureFirebaseInit() {
-      if (firebaseDb) return firebaseDb;
+    async function fbRestRequest(path, method = "GET", bodyObj = null, timeoutMs = 4000) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeoutMs);
       try {
-        if (typeof firebase !== "undefined") {
-          if (!firebase.apps.length) {
-            firebase.initializeApp(firebaseConfig);
-          }
-          firebaseDb = firebase.database();
+        const opts = {
+          method: method,
+          headers: { "Content-Type": "application/json" },
+          signal: controller.signal,
+          cache: "no-store"
+        };
+        if (bodyObj !== null && method !== "GET" && method !== "DELETE") {
+          opts.body = JSON.stringify(bodyObj);
         }
-      } catch (e) {
-        console.error("Firebase init error:", e);
+        const res = await fetch(`${FIREBASE_RTDB_URL}${path}`, opts);
+        clearTimeout(timer);
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return await res.json();
+      } catch (err) {
+        clearTimeout(timer);
+        throw err;
       }
-      return firebaseDb;
     }
 
     function safeFirebaseKey(str) {
@@ -1583,18 +767,21 @@ window.PRESET_BILLS = [];
     }
 
     function flushPendingDeletesToCloud() {
-      if (!firebaseDb || pendingBillDeletes.length === 0) return;
+      if (pendingBillDeletes.length === 0) return;
       const toDelete = [...pendingBillDeletes];
       toDelete.forEach(billNo => {
         const key = safeFirebaseKey(billNo);
-        firebaseDb.ref('yogam_app/bills/' + key).remove().then(() => {
-          pendingBillDeletes = pendingBillDeletes.filter(x => x !== billNo);
-          savePendingDeletes();
-        }).catch(err => console.error("Pending delete retry failed:", err));
+        fbRestRequest(`/yogam_app/bills/${key}.json`, "DELETE", null, 4000)
+          .then(() => {
+            pendingBillDeletes = pendingBillDeletes.filter(x => x !== billNo);
+            savePendingDeletes();
+          })
+          .catch(() => {});
       });
     }
 
     let currentBillItems = [];
+    let _isCloudSyncing = false;
 
     // --- Launch & Auto-Restore on Minimise/Reopen ---
     window.addEventListener('DOMContentLoaded', () => {
@@ -1605,30 +792,10 @@ window.PRESET_BILLS = [];
         startNewBill(false);
       }
 
-      // 2. Load QR engine in background (non-blocking)
-      loadScriptOnce('https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js')
-        .then(() => { _lastQrUrl = ""; calculateTotals(); })
-        .catch(() => {});
-
-      // 3. Connect Firebase Cloud Sync after initial paint settles (keeps Speed Index < 2.2s)
-      let _fbBootStarted = false;
-      window.bootFirebaseCloudSync = function() {
-        if (_fbBootStarted) return;
-        _fbBootStarted = true;
-        loadScriptOnce('https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js')
-          .then(() => loadScriptOnce('https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js'))
-          .then(() => {
-            ensureFirebaseInit();
-            initRealtimeEverywhereSync();
-          })
-          .catch(() => {
-            updateCloudBadge('offline');
-          });
-      };
-      setTimeout(window.bootFirebaseCloudSync, 3500);
-      ['pointerdown', 'keydown', 'touchstart'].forEach(evt => {
-        window.addEventListener(evt, window.bootFirebaseCloudSync, { once: true, passive: true });
-      });
+      // 2. Non-blocking cloud sync after first paint settles
+      setTimeout(() => {
+        initRealtimeEverywhereSync();
+      }, 1200);
     });
 
     // Save state automatically when browser is minimised, backgrounded, or closed
@@ -1637,6 +804,7 @@ window.PRESET_BILLS = [];
         persistActiveDraft();
       } else if (document.visibilityState === 'visible') {
         syncFromLocalStorage();
+        syncCloudStateOnce();
       }
     });
 
@@ -1646,6 +814,15 @@ window.PRESET_BILLS = [];
 
     window.addEventListener('focus', () => {
       syncFromLocalStorage();
+      syncCloudStateOnce();
+    });
+
+    window.addEventListener('online', () => {
+      syncCloudStateOnce();
+    });
+
+    window.addEventListener('offline', () => {
+      updateCloudBadge('offline');
     });
 
     function persistActiveDraft() {
@@ -1703,16 +880,99 @@ window.PRESET_BILLS = [];
       return "YF-" + (maxNum + 1);
     }
 
-    // --- Real-Time Cloud Sync via Firebase Realtime Database ---
+    async function syncCloudStateOnce() {
+      if (_isCloudSyncing) return;
+      if (typeof navigator !== "undefined" && navigator.onLine === false) {
+        updateCloudBadge('offline');
+        return;
+      }
+      _isCloudSyncing = true;
+      try {
+        const root = await fbRestRequest('/yogam_app.json', 'GET', null, 4000);
+        updateCloudBadge('online');
+        flushPendingDeletesToCloud();
+
+        const data = root || {};
+        // 1. Sync Bills
+        const billsVal = data.bills || null;
+        const metaInited = data.meta && data.meta.billsInitialized === true;
+        if (!billsVal) {
+          const localInited = localStorage.getItem('yogam_bills_initialized') === 'true';
+          if (metaInited || localInited) {
+            savedBills = [];
+            localStorage.setItem('yogam_bills', JSON.stringify([]));
+            localStorage.setItem('yogam_bills_initialized', 'true');
+            renderSavedBillsTable();
+          } else if (savedBills.length > 0) {
+            const seedObj = {};
+            savedBills.forEach((b, idx) => {
+              const key = safeFirebaseKey(b.billNo);
+              seedObj[key] = Object.assign({ updatedAt: Date.now() - idx * 1000 }, b);
+            });
+            localStorage.setItem('yogam_bills_initialized', 'true');
+            fbRestRequest('/yogam_app/meta/billsInitialized.json', 'PUT', true, 4000).catch(() => {});
+            fbRestRequest('/yogam_app/bills.json', 'PUT', seedObj, 4000).catch(() => {});
+          } else {
+            localStorage.setItem('yogam_bills_initialized', 'true');
+            fbRestRequest('/yogam_app/meta/billsInitialized.json', 'PUT', true, 4000).catch(() => {});
+          }
+        } else {
+          localStorage.setItem('yogam_bills_initialized', 'true');
+          if (!metaInited) {
+            fbRestRequest('/yogam_app/meta/billsInitialized.json', 'PUT', true, 4000).catch(() => {});
+          }
+          const cloudBills = Object.entries(billsVal)
+            .map(([fbKey, b]) => (b && b.billNo ? Object.assign({}, b, { _fbKey: fbKey }) : null))
+            .filter(b => b && !pendingBillDeletes.includes(b.billNo));
+          cloudBills.sort((a, b) => (b.updatedAt || 0) - (a.updatedAt || 0));
+          savedBills = cloudBills;
+          localStorage.setItem('yogam_bills', JSON.stringify(savedBills));
+          renderSavedBillsTable();
+
+          if (currentBillItems.length === 0 && !document.getElementById('custName').value.trim()) {
+            const nextNo = getNextBillNumber();
+            document.getElementById('billNo').value = nextNo;
+            document.getElementById('billPreviewNo').innerText = "#" + nextNo;
+            persistActiveDraft();
+          }
+        }
+
+        // 2. Sync Products
+        if (data.products) {
+          const arr = Array.isArray(data.products) ? data.products.filter(Boolean) : Object.values(data.products).filter(Boolean);
+          if (arr.length > 0) {
+            productsList = arr;
+            localStorage.setItem('yogam_products', JSON.stringify(productsList));
+            renderProductDatalists();
+            renderInventoryModalList();
+          }
+        } else if (productsList.length > 0) {
+          fbRestRequest('/yogam_app/products.json', 'PUT', productsList, 4000).catch(() => {});
+        }
+
+        // 3. Sync Settings
+        if (data.settings) {
+          appSettings = Object.assign({}, appSettings, data.settings);
+          localStorage.setItem('yogam_settings', JSON.stringify(appSettings));
+          applyCompanySettings();
+        } else {
+          fbRestRequest('/yogam_app/settings.json', 'PUT', appSettings, 4000).catch(() => {});
+        }
+      } catch (e) {
+        updateCloudBadge('offline');
+      } finally {
+        _isCloudSyncing = false;
+      }
+    }
+
+    // --- Real-Time Cloud Sync via Lightweight REST Polling (No Hanging Sockets) ---
     function initRealtimeEverywhereSync() {
-      // 1. Cross-Tab Local Storage Listener
       window.addEventListener('storage', (e) => {
         if (e.key === 'yogam_bills' || e.key === 'yogam_products' || e.key === 'yogam_settings') {
           syncFromLocalStorage();
         }
       });
 
-      // 2. BroadcastChannel Listener (Same Device Tabs)
       if (localBroadcast) {
         localBroadcast.onmessage = (event) => {
           if (event.data && event.data.sender !== clientInstanceId) {
@@ -1721,108 +981,12 @@ window.PRESET_BILLS = [];
         };
       }
 
-      // 3. Firebase Realtime Database Live Listeners (All Devices Worldwide)
-      if (!firebaseDb) {
-        updateCloudBadge('offline');
-        return;
-      }
-
-      // Monitor Online/Offline Connection Status
-      firebaseDb.ref('.info/connected').on('value', (snap) => {
-        if (snap.val() === true) {
-          updateCloudBadge('online');
-          flushPendingDeletesToCloud();
-        } else {
-          updateCloudBadge('offline');
+      syncCloudStateOnce();
+      setInterval(() => {
+        if (document.visibilityState === 'visible') {
+          syncCloudStateOnce();
         }
-      });
-
-      // Live Sync: Bills (Fixed: deleted bills NEVER come back after refresh)
-      firebaseDb.ref('yogam_app/bills').on('value', (snapshot) => {
-        const val = snapshot.val();
-        if (!val) {
-          firebaseDb.ref('yogam_app/meta/billsInitialized').once('value').then((metaSnap) => {
-            const cloudAlreadyInitialized = metaSnap.val() === true;
-            const localAlreadyInitialized = localStorage.getItem('yogam_bills_initialized') === 'true';
-
-            if (cloudAlreadyInitialized || localAlreadyInitialized) {
-              // All bills were intentionally deleted — keep empty, DO NOT re-seed PRESET_BILLS
-              savedBills = [];
-              localStorage.setItem('yogam_bills', JSON.stringify([]));
-              localStorage.setItem('yogam_bills_initialized', 'true');
-              renderSavedBillsTable();
-              return;
-            }
-
-            // Genuine first-time setup only
-            if (savedBills.length > 0) {
-              const seedObj = {};
-              savedBills.forEach((b, idx) => {
-                const key = safeFirebaseKey(b.billNo);
-                seedObj[key] = Object.assign({ updatedAt: Date.now() - idx * 1000 }, b);
-              });
-              firebaseDb.ref('yogam_app/meta/billsInitialized').set(true).catch(() => {});
-              localStorage.setItem('yogam_bills_initialized', 'true');
-              firebaseDb.ref('yogam_app/bills').set(seedObj).catch(() => {});
-            } else {
-              firebaseDb.ref('yogam_app/meta/billsInitialized').set(true).catch(() => {});
-              localStorage.setItem('yogam_bills_initialized', 'true');
-            }
-          }).catch(() => {});
-          return;
-        }
-
-        // Cloud has bills: mark initialized and capture exact Firebase keys
-        localStorage.setItem('yogam_bills_initialized', 'true');
-        firebaseDb.ref('yogam_app/meta/billsInitialized').set(true).catch(() => {});
-
-        const cloudBills = Object.entries(val)
-          .map(([fbKey, b]) => (b && b.billNo ? Object.assign({}, b, { _fbKey: fbKey }) : null))
-          .filter(b => b && !pendingBillDeletes.includes(b.billNo));
-
-        cloudBills.sort((a, b) => (b.updatedAt || 0) - (a.updatedAt || 0));
-        savedBills = cloudBills;
-        localStorage.setItem('yogam_bills', JSON.stringify(savedBills));
-        renderSavedBillsTable();
-
-        // Update next bill number automatically if current draft is empty
-        if (currentBillItems.length === 0 && !document.getElementById('custName').value.trim()) {
-          const nextNo = getNextBillNumber();
-          document.getElementById('billNo').value = nextNo;
-          document.getElementById('billPreviewNo').innerText = "#" + nextNo;
-          persistActiveDraft();
-        }
-      });
-
-      // Live Sync: Products
-      firebaseDb.ref('yogam_app/products').on('value', (snapshot) => {
-        const val = snapshot.val();
-        if (!val) {
-          if (productsList.length > 0) {
-            firebaseDb.ref('yogam_app/products').set(productsList).catch(() => {});
-          }
-          return;
-        }
-        const arr = Array.isArray(val) ? val.filter(Boolean) : Object.values(val).filter(Boolean);
-        if (arr.length > 0) {
-          productsList = arr;
-          localStorage.setItem('yogam_products', JSON.stringify(productsList));
-          renderProductDatalists();
-          renderInventoryModalList();
-        }
-      });
-
-      // Live Sync: Company Settings
-      firebaseDb.ref('yogam_app/settings').on('value', (snapshot) => {
-        const val = snapshot.val();
-        if (!val) {
-          firebaseDb.ref('yogam_app/settings').set(appSettings).catch(() => {});
-          return;
-        }
-        appSettings = Object.assign({}, appSettings, val);
-        localStorage.setItem('yogam_settings', JSON.stringify(appSettings));
-        applyCompanySettings();
-      });
+      }, 12000);
     }
 
     function broadcastSyncUpdate(type, data) {
@@ -1837,30 +1001,32 @@ window.PRESET_BILLS = [];
         try { localBroadcast.postMessage(payload); } catch (e) {}
       }
 
-      if (firebaseDb) {
-        try {
-          if (type === 'BILL_UPSERT' && data && data.billNo) {
-            const key = safeFirebaseKey(data.billNo);
-            const billPayload = Object.assign({}, data, { updatedAt: Date.now() });
-            firebaseDb.ref('yogam_app/bills/' + key).set(billPayload).catch(err => console.error(err));
-          } else if (type === 'BILL_DELETE' && data && data.billNo) {
-            firebaseDb.ref('yogam_app/meta/billsInitialized').set(true).catch(() => {});
-            const keysToRemove = new Set([safeFirebaseKey(data.billNo)]);
-            if (data._fbKey) keysToRemove.add(data._fbKey);
-            Promise.all(
-              Array.from(keysToRemove).map(k => firebaseDb.ref('yogam_app/bills/' + k).remove())
-            ).then(() => {
-              pendingBillDeletes = pendingBillDeletes.filter(x => x !== data.billNo);
-              savePendingDeletes();
-            }).catch(err => console.error("Firebase delete error:", err));
-          } else if (type === 'PRODUCTS_SYNC' && Array.isArray(data)) {
-            firebaseDb.ref('yogam_app/products').set(data).catch(err => console.error(err));
-          } else if (type === 'SETTINGS_SYNC' && data) {
-            firebaseDb.ref('yogam_app/settings').set(data).catch(err => console.error(err));
-          }
-        } catch (e) {
-          console.error("Firebase write error:", e);
-        }
+      if (type === 'BILL_UPSERT' && data && data.billNo) {
+        const key = safeFirebaseKey(data.billNo);
+        const billPayload = Object.assign({}, data, { updatedAt: Date.now() });
+        fbRestRequest('/yogam_app/meta/billsInitialized.json', 'PUT', true, 4000).catch(() => {});
+        fbRestRequest(`/yogam_app/bills/${key}.json`, 'PUT', billPayload, 4000)
+          .then(() => updateCloudBadge('online'))
+          .catch(() => updateCloudBadge('offline'));
+      } else if (type === 'BILL_DELETE' && data && data.billNo) {
+        fbRestRequest('/yogam_app/meta/billsInitialized.json', 'PUT', true, 4000).catch(() => {});
+        const keysToRemove = new Set([safeFirebaseKey(data.billNo)]);
+        if (data._fbKey) keysToRemove.add(data._fbKey);
+        Promise.all(
+          Array.from(keysToRemove).map(k => fbRestRequest(`/yogam_app/bills/${k}.json`, 'DELETE', null, 4000))
+        ).then(() => {
+          pendingBillDeletes = pendingBillDeletes.filter(x => x !== data.billNo);
+          savePendingDeletes();
+          updateCloudBadge('online');
+        }).catch(() => updateCloudBadge('offline'));
+      } else if (type === 'PRODUCTS_SYNC' && Array.isArray(data)) {
+        fbRestRequest('/yogam_app/products.json', 'PUT', data, 4000)
+          .then(() => updateCloudBadge('online'))
+          .catch(() => updateCloudBadge('offline'));
+      } else if (type === 'SETTINGS_SYNC' && data) {
+        fbRestRequest('/yogam_app/settings.json', 'PUT', data, 4000)
+          .then(() => updateCloudBadge('online'))
+          .catch(() => updateCloudBadge('offline'));
       }
     }
 
@@ -2162,16 +1328,153 @@ window.PRESET_BILLS = [];
       return url;
     }
 
-    function generateCrispQrDataUrl(text) {
-      if (typeof qrcode === "undefined") return null;
-      const qr = qrcode(0, 'M');
-      qr.addData(text);
-      qr.make();
-      const moduleCount = qr.getModuleCount();
-      const quietZone = 4;
-      const cellSize = 8;
-      const size = (moduleCount + quietZone * 2) * cellSize;
+    // --- 100% Offline Self-Contained QR Generator (Versions 1-10, Byte Mode, Level M, Mask 0) ---
+    const QR_M_SPECS = {
+      1:[26,16,10,1,16,0,0], 2:[44,28,16,1,28,0,0], 3:[70,44,26,1,44,0,0],
+      4:[100,64,18,2,32,0,0], 5:[134,86,24,2,43,0,0], 6:[172,108,16,4,27,0,0],
+      7:[196,124,18,4,31,0,0], 8:[242,154,22,2,38,2,39], 9:[292,182,22,3,36,2,37],
+      10:[346,216,26,4,43,1,44]
+    };
+    const QR_ALIGN = {
+      1:[], 2:[6,18], 3:[6,22], 4:[6,26], 5:[6,30],
+      6:[6,34], 7:[6,22,38], 8:[6,24,42], 9:[6,26,46], 10:[6,28,50]
+    };
+    const QR_GF_EXP = new Uint8Array(512), QR_GF_LOG = new Uint8Array(256);
+    (function(){
+      let x = 1;
+      for (let i = 0; i < 255; i++) {
+        QR_GF_EXP[i] = x; QR_GF_LOG[x] = i;
+        x <<= 1; if (x & 0x100) x ^= 0x11d;
+      }
+      for (let i = 255; i < 512; i++) QR_GF_EXP[i] = QR_GF_EXP[i - 255];
+    })();
+    function qrGfMul(a, b) { return (a === 0 || b === 0) ? 0 : QR_GF_EXP[QR_GF_LOG[a] + QR_GF_LOG[b]]; }
+    function qrRsRemainder(data, ecLen) {
+      let poly = [1];
+      for (let i = 0; i < ecLen; i++) {
+        const nxt = new Array(poly.length + 1).fill(0);
+        for (let j = 0; j < poly.length; j++) {
+          nxt[j] ^= poly[j];
+          nxt[j + 1] ^= qrGfMul(poly[j], QR_GF_EXP[i]);
+        }
+        poly = nxt;
+      }
+      const rem = new Array(ecLen).fill(0);
+      for (let k = 0; k < data.length; k++) {
+        const factor = data[k] ^ rem[0];
+        rem.shift(); rem.push(0);
+        for (let j = 0; j < ecLen; j++) rem[j] ^= qrGfMul(poly[j + 1], factor);
+      }
+      return rem;
+    }
+    function buildQrMatrix(text) {
+      const raw = new TextEncoder().encode(text);
+      const n = raw.length;
+      let ver = 0;
+      for (let v = 1; v <= 10; v++) {
+        const ccBits = v <= 9 ? 8 : 16;
+        if (4 + ccBits + n * 8 <= QR_M_SPECS[v][1] * 8) { ver = v; break; }
+      }
+      if (!ver) return null;
+      const [totalCw, dataCw, ecLen, b1, d1, b2, d2] = QR_M_SPECS[ver];
+      const ccBits = ver <= 9 ? 8 : 16;
+      const bits = [];
+      const pushBits = (val, len) => { for (let i = len - 1; i >= 0; i--) bits.push((val >> i) & 1); };
+      pushBits(4, 4);
+      pushBits(n, ccBits);
+      for (let i = 0; i < n; i++) pushBits(raw[i], 8);
+      pushBits(0, Math.min(4, dataCw * 8 - bits.length));
+      while (bits.length % 8 !== 0) bits.push(0);
+      const cw = [];
+      for (let i = 0; i < bits.length; i += 8) {
+        let v = 0;
+        for (let j = 0; j < 8; j++) v = (v << 1) | bits[i + j];
+        cw.push(v);
+      }
+      const pad = [0xEC, 0x11];
+      for (let pi = 0; cw.length < dataCw; pi++) cw.push(pad[pi % 2]);
 
+      const blocks = [], ecs = [];
+      let idx = 0;
+      for (let i = 0; i < b1; i++) { const blk = cw.slice(idx, idx + d1); idx += d1; blocks.push(blk); ecs.push(qrRsRemainder(blk, ecLen)); }
+      for (let i = 0; i < b2; i++) { const blk = cw.slice(idx, idx + d2); idx += d2; blocks.push(blk); ecs.push(qrRsRemainder(blk, ecLen)); }
+
+      const finalCw = [];
+      const maxD = Math.max(d1, d2);
+      for (let i = 0; i < maxD; i++) for (const blk of blocks) if (i < blk.length) finalCw.push(blk[i]);
+      for (let i = 0; i < ecLen; i++) for (const ec of ecs) finalCw.push(ec[i]);
+
+      const size = ver * 4 + 17;
+      const grid = Array.from({ length: size }, () => new Uint8Array(size));
+      const func = Array.from({ length: size }, () => new Uint8Array(size));
+      const setFunc = (r, c, val) => {
+        if (r >= 0 && r < size && c >= 0 && c < size) { grid[r][c] = val ? 1 : 0; func[r][c] = 1; }
+      };
+      const placeFinder = (r0, c0) => {
+        for (let dr = -1; dr <= 7; dr++) for (let dc = -1; dc <= 7; dc++) {
+          const inOuter = (dr >= 0 && dr <= 6 && dc >= 0 && dc <= 6) && (dr === 0 || dr === 6 || dc === 0 || dc === 6);
+          const inInner = (dr >= 2 && dr <= 4 && dc >= 2 && dc <= 4);
+          setFunc(r0 + dr, c0 + dc, inOuter || inInner);
+        }
+      };
+      placeFinder(0, 0); placeFinder(0, size - 7); placeFinder(size - 7, 0);
+
+      for (const r of QR_ALIGN[ver]) for (const c of QR_ALIGN[ver]) {
+        if (func[r][c]) continue;
+        for (let dr = -2; dr <= 2; dr++) for (let dc = -2; dc <= 2; dc++) {
+          setFunc(r + dr, c + dc, Math.abs(dr) === 2 || Math.abs(dc) === 2 || (dr === 0 && dc === 0));
+        }
+      }
+      for (let i = 8; i < size - 8; i++) { setFunc(6, i, i % 2 === 0); setFunc(i, 6, i % 2 === 0); }
+      setFunc(size - 8, 8, 1);
+      for (let i = 0; i < 9; i++) if (i !== 6) { setFunc(8, i, 0); setFunc(i, 8, 0); }
+      for (let i = 0; i < 8; i++) { setFunc(8, size - 1 - i, 0); if (i < 7) setFunc(size - 1 - i, 8, 0); }
+      if (ver >= 7) {
+        let d = ver << 12;
+        for (let i = 5; i >= 0; i--) if (d & (1 << (i + 12))) d ^= 0x1f25 << i;
+        const vbits = (ver << 12) | d;
+        for (let i = 0; i < 18; i++) {
+          const bit = (vbits >> i) & 1, r = Math.floor(i / 3), c = size - 11 + (i % 3);
+          setFunc(r, c, bit); setFunc(c, r, bit);
+        }
+      }
+      const allBits = [];
+      for (const byte of finalCw) for (let i = 7; i >= 0; i--) allBits.push((byte >> i) & 1);
+      let bi = 0, up = true;
+      for (let c = size - 1; c > 0; c -= 2) {
+        if (c === 6) c--;
+        for (let step = 0; step < size; step++) {
+          const r = up ? (size - 1 - step) : step;
+          for (const dc of [0, -1]) {
+            const cc = c + dc;
+            if (!func[r][cc]) {
+              let bit = bi < allBits.length ? allBits[bi++] : 0;
+              if ((r + cc) % 2 === 0) bit ^= 1;
+              grid[r][cc] = bit;
+            }
+          }
+        }
+        up = !up;
+      }
+      const fmt = 0x5412;
+      const c1 = [[8,0],[8,1],[8,2],[8,3],[8,4],[8,5],[8,7],[8,8],[7,8],[5,8],[4,8],[3,8],[2,8],[1,8],[0,8]];
+      const c2 = [[size-1,8],[size-2,8],[size-3,8],[size-4,8],[size-5,8],[size-6,8],[size-7,8],
+                  [8,size-8],[8,size-7],[8,size-6],[8,size-5],[8,size-4],[8,size-3],[8,size-2],[8,size-1]];
+      for (let i = 0; i < 15; i++) {
+        const bit = (fmt >> (14 - i)) & 1;
+        grid[c1[i][0]][c1[i][1]] = bit;
+        grid[c2[i][0]][c2[i][1]] = bit;
+      }
+      return grid;
+    }
+
+    function generateCrispQrDataUrl(text) {
+      const grid = buildQrMatrix(text);
+      if (!grid) return null;
+      const moduleCount = grid.length;
+      const quietZone = 4;
+      const cellSize = 6;
+      const size = (moduleCount + quietZone * 2) * cellSize;
       const canvas = document.createElement('canvas');
       canvas.width = size;
       canvas.height = size;
@@ -2179,10 +1482,9 @@ window.PRESET_BILLS = [];
       ctx.fillStyle = '#ffffff';
       ctx.fillRect(0, 0, size, size);
       ctx.fillStyle = '#000000';
-
       for (let r = 0; r < moduleCount; r++) {
         for (let c = 0; c < moduleCount; c++) {
-          if (qr.isDark(r, c)) {
+          if (grid[r][c]) {
             ctx.fillRect((c + quietZone) * cellSize, (r + quietZone) * cellSize, cellSize, cellSize);
           }
         }
@@ -2199,21 +1501,13 @@ window.PRESET_BILLS = [];
       _lastQrUrl = upiUrl;
       qrBox.innerHTML = "";
       const localDataUrl = generateCrispQrDataUrl(upiUrl);
-
       const qrImg = document.createElement('img');
       qrImg.alt = "UPI Payment QR";
+      qrImg.width = 80;
+      qrImg.height = 80;
       qrImg.className = "w-20 h-20 object-contain block";
       qrImg.style.imageRendering = "pixelated";
-
-      if (localDataUrl) {
-        qrImg.src = localDataUrl;
-      } else {
-        qrImg.crossOrigin = "anonymous";
-        qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=12&data=${encodeURIComponent(upiUrl)}`;
-        qrImg.onerror = function() {
-          qrBox.innerHTML = `<span class="text-[9px] font-black text-red-600 border border-red-300 p-1 rounded">UPI PAY</span>`;
-        };
-      }
+      qrImg.src = localDataUrl || "";
       qrBox.appendChild(qrImg);
     }
 
@@ -3492,18 +2786,5 @@ ${catalogText}`;
       document.getElementById('developerModal').classList.add('hidden');
     }
 
-    // --- Export Self-Contained HTML ---
-    function exportSelfContainedHTML() {
-      const stateScript = document.getElementById('embeddedAppState');
-      if (stateScript) {
-        stateScript.textContent = `\nwindow.PRESET_SETTINGS = ${JSON.stringify(appSettings, null, 2)};\nwindow.PRESET_PRODUCTS = ${JSON.stringify(productsList, null, 2)};\nwindow.PRESET_BILLS = ${JSON.stringify(savedBills, null, 2)};\n`;
-      }
-      const fullHtml = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
-      const blob = new Blob([fullHtml], { type: "text/html;charset=utf-8" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = "Yogam_Fireworks_Updated_Billing.html";
-      a.click();
-    }
   </script>
 </body></html>
